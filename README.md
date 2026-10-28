@@ -478,9 +478,4 @@ docs/                     source_notes.md, data_dictionary.md, quality_report.md
 - The ingestion is a JSON search plus HTML detail pages, not a pure HTML scrape: the HTML listing pages of the portal are empty shells.
 - Tested on Linux only (see [Requirements](#requirements)).
 
-Open questions for the data owner: whether another source (the portal's other GeoPortal layers, for example an offshore
-cable layer and peatland datasets) should provide grid landing and peatland records; which date counts as the
-publication date; whether plans in draft stage belong in the staging table; and whether an existing definition of
-`iris_staging.signal_ingest` has to be followed (this version creates the table itself, see `sql/01_schema.sql`).
-
 ---
