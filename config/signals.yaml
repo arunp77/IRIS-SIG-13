@@ -1,0 +1,37 @@
+# What to look for. One block per signal type, in priority order (a title that matches
+# several signals gets the first one).
+#
+# search_terms  sent to the portal. Its search matches inside words ("Moor" also finds
+#               "Broderstorf"), so these only collect candidates.
+# any           a title matches if one of these regular expressions matches
+# all_of        ... or if every expression of one of these lists matches
+#
+# Expressions are case-insensitive and are applied to the title of a record. Words such as
+# "Umspannwerk" or "Moor" alone are not enough: they mostly occur in unrelated plans and in
+# place names (a ferry port, "Krummes Moor"), so they only count together with a second word.
+
+grid_landing:
+  search_terms: [Umspannwerk, Netzanbindung, Anlandung, Seekabel, Konverter, Offshore, Netzverknüpfungspunkt]
+  any: ['anlandung', 'anlandepunkt', 'seekabel']
+  all_of:
+    - ['umspannwerk', 'offshore']
+    - ['netzanbindung', 'offshore']
+    - ['konverter', 'offshore']
+
+peatland_restoration:
+  search_terms: [Moor, Wiedervernässung, Paludikultur]
+  any: ['wiedervern(ä|ae)ssung', 'paludikultur', 'moorschutz', 'moorrenaturierung']
+  all_of:
+    - ['(?<![a-zäöüß])moor', 'renaturierung']
+    - ['(?<![a-zäöüß])moor', 'vern(ä|ae)ssung']
+
+solar_acreage:
+  # titles use many spellings: Photovoltaik, Fotovoltaik, PV, PVA, Solarpark, Solaranlage ...
+  search_terms: [Photovoltaik, Fotovoltaik, Solar, Solarpark, PV, PVA, Agri-PV, Freiflächenanlage, Sonnenenergie]
+  any:
+    - 'photovoltaik'
+    - 'fotovoltaik'
+    - 'solar'
+    - 'agri-?pv'
+    - 'sonnenenergie'
+    - '(?<![a-zäöüß])pva?(?![a-zäöüß])'   # "PV", "PVA", "..._PV", but not "PVC"
