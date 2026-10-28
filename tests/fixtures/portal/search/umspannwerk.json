@@ -1,0 +1,255 @@
+{
+ "results": [
+  [
+   {
+    "_resourceLinkId": "7796735f-49d0-475f-86dc-c9675986793d",
+    "_resourceGroup": "Bentwisch Aussenbereichssatzung Nr. 0",
+    "title": "Aussenbereichssatzung Bentwisch Am Umspannwerk Ursprungsplan",
+    "x_dokumentURL": [
+     "https://daten.btfietz.de/data/amt_rostocker_heide/amt_rostocker_heide_bentwisch_abs_am_umspannwerk_0_0_1.pdf"
+    ],
+    "x_planartCode": [
+     "5000"
+    ],
+    "x_planartText": [
+     "Aussenbereichssatzung"
+    ],
+    "x_planarthauptCode": [
+     "5000"
+    ],
+    "x_planarthauptText": [
+     "Aussenbereichssatzung"
+    ],
+    "x_GKZ": [
+     "13072012"
+    ],
+    "x_gemeinde": [
+     "Bentwisch"
+    ],
+    "x_regionalschluessel": [
+     "130725260012"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "72"
+    ],
+    "x_landkreis": [
+     "Landkreis Rostock"
+    ],
+    "x_landkreis_schluessel": [
+     "13072"
+    ],
+    "x_VKZ": [
+     "5260"
+    ],
+    "x_amt": [
+     "Rostocker Heide"
+    ],
+    "x_amt_schluessel": [
+     "5260"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "0"
+    ],
+    "x_inkrafttretensdatum": [
+     "2021-06-15 00:00:00"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Außenbereichssatzung (2,75 MB)"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_rechtsstandcode": [
+     "4000"
+    ],
+    "x_rechtsstandtext": [
+     "In Kraft getreten"
+    ],
+    "x_gmlid": [
+     "7796735f-49d0-475f-86dc-c9675986793d"
+    ],
+    "lowerbounds": "54.11282891147395,12.210376706303835",
+    "upperbounds": "54.11602172159139,12.21394447334871",
+    "lon_min": 12.210376706303835,
+    "lon_max": 12.21394447334871,
+    "lat_min": 54.11282891147395,
+    "lat_max": 54.11602172159139,
+    "x_centroid": [
+     "6001033.934488048,709935.1784010621"
+    ],
+    "x_lowerbounds": [
+     "6000848.022261283,709820.2765104631"
+    ],
+    "x_upperbounds": [
+     "6001200.3548720125,710066.3462834798"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "c1e858844ba6150f8002952de0974551!260cfb432304ee8f0335cc1912100fdf1f87c1d418fffa8bc518eab65a462849",
+    "_resourceIndexed": "2026-10-27T09:23:25Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=7796735f-49d0-475f-86dc-c9675986793d",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194292002062336,
+    "[elevated]": false,
+    "score": 1273.1583,
+    "projbounds_lower": "709834,6000840",
+    "projbounds_upper": "710051,6001205",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "7c2d4222-19fa-11f0-9128-9bd69ab84535",
+    "_resourceGroup": "Siedenbrünzow Bebauungsplan Nr. 8",
+    "title": "BPlan Nr. 8  Siedenbrünzow Gewerbegebiet am Umspannwerk",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/Bekanntmachung-167080.pdf"
+    ],
+    "x_planartCode": [
+     "10001"
+    ],
+    "x_planartText": [
+     "Qualifizierter B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13071136"
+    ],
+    "x_gemeinde": [
+     "Siedenbrünzow"
+    ],
+    "x_regionalschluessel": [
+     "130715151136"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5151"
+    ],
+    "x_amt": [
+     "Demmin-Land"
+    ],
+    "x_amt_schluessel": [
+     "5151"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "8"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Bekanntmachung"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "2200"
+    ],
+    "x_rechtsstandtext": [
+     "Frühzeitige Öffentlichkeitsbeteiligung"
+    ],
+    "x_gmlid": [
+     "7c2d4222-19fa-11f0-9128-9bd69ab84535"
+    ],
+    "lowerbounds": "53.89871980260207,13.14036808136252",
+    "upperbounds": "53.90534904554825,13.144465766424279",
+    "lon_min": 13.14036808136252,
+    "lon_max": 13.144465766424279,
+    "lat_min": 53.89871980260207,
+    "lat_max": 53.90534904554825,
+    "x_centroid": [
+     "5980775.294858912,772099.1374636949"
+    ],
+    "x_lowerbounds": [
+     "5980214.515009723,771949.0986789756"
+    ],
+    "x_upperbounds": [
+     "5980951.7756760605,772252.4940731633"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "fd2f4a9e174c20bead961ca1e21d791d!8a81eb6d421a5fbd6444f8cda0d0b07d79709d11235d020315c45732ccc45e5e",
+    "_resourceIndexed": "2026-10-27T09:23:22Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=7c2d4222-19fa-11f0-9128-9bd69ab84535",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194289705680896,
+    "[elevated]": false,
+    "score": 1247.5066,
+    "projbounds_lower": "771985,5980199",
+    "projbounds_upper": "772211,5980952",
+    "proj": "EPSG:25832"
+   }
+  ]
+ ]
+}

@@ -1,0 +1,633 @@
+{
+ "results": [
+  [
+   {
+    "_resourceLinkId": "0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e",
+    "_resourceGroup": "Werder Vorhabenbezogener B-Plan Nr. 3",
+    "title": "Vorhabensbezogener BPlan Nr. 3  Werder Moor-Solarpark Werder",
+    "x_planartCode": [
+     "3000"
+    ],
+    "x_planartText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "3000"
+    ],
+    "x_planarthauptText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_GKZ": [
+     "13071158"
+    ],
+    "x_gemeinde": [
+     "Werder"
+    ],
+    "x_regionalschluessel": [
+     "130715163158"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5163"
+    ],
+    "x_amt": [
+     "Treptower Tollensewinkel"
+    ],
+    "x_amt_schluessel": [
+     "5163"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "3"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "2200"
+    ],
+    "x_rechtsstandtext": [
+     "Frühzeitige Öffentlichkeitsbeteiligung"
+    ],
+    "x_gmlid": [
+     "0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e"
+    ],
+    "lowerbounds": "53.69229428004221,13.365875866137479",
+    "upperbounds": "53.71203617101399,13.395925978316152",
+    "lon_min": 13.365875866137479,
+    "lon_max": 13.395925978316152,
+    "lat_min": 53.69229428004221,
+    "lat_max": 53.71203617101399,
+    "x_centroid": [
+     "5959287.734432664,789102.5358501791"
+    ],
+    "x_lowerbounds": [
+     "5958204.049621437,788170.8637373258"
+    ],
+    "x_upperbounds": [
+     "5960435.156900034,790079.8333423359"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "49a849f93347451881cb823f50415c9e!d920a0476adbd4138dde6d479376109151f08b1f3b4c52315cedaa1fb4c8c905",
+    "_resourceIndexed": "2026-10-27T09:23:24Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194291002769408,
+    "[elevated]": false,
+    "score": 80.72776,
+    "projbounds_lower": "788204,5958142",
+    "projbounds_upper": "790050,5960459",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e",
+    "_resourceGroup": "Werder Vorhabenbezogener B-Plan Nr. 3",
+    "title": "Vorhabensbezogener BPlan Nr. 3  Werder Moor-Solarpark Werder",
+    "x_planartCode": [
+     "3000"
+    ],
+    "x_planartText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "3000"
+    ],
+    "x_planarthauptText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_GKZ": [
+     "13071158"
+    ],
+    "x_gemeinde": [
+     "Werder"
+    ],
+    "x_regionalschluessel": [
+     "130715163158"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5163"
+    ],
+    "x_amt": [
+     "Treptower Tollensewinkel"
+    ],
+    "x_amt_schluessel": [
+     "5163"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "3"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "2200"
+    ],
+    "x_rechtsstandtext": [
+     "Frühzeitige Öffentlichkeitsbeteiligung"
+    ],
+    "x_gmlid": [
+     "0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e"
+    ],
+    "lowerbounds": "53.69229428004221,13.365875866137479",
+    "upperbounds": "53.71203617101399,13.395925978316152",
+    "lon_min": 13.365875866137479,
+    "lon_max": 13.395925978316152,
+    "lat_min": 53.69229428004221,
+    "lat_max": 53.71203617101399,
+    "x_centroid": [
+     "5959287.734432664,789102.5358501791"
+    ],
+    "x_lowerbounds": [
+     "5958204.049621437,788170.8637373258"
+    ],
+    "x_upperbounds": [
+     "5960435.156900034,790079.8333423359"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "49a849f93347451881cb823f50415c9e!d920a0476adbd4138dde6d479376109151f08b1f3b4c52315cedaa1fb4c8c905",
+    "_resourceIndexed": "2026-10-27T09:23:24Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194291002769408,
+    "[elevated]": false,
+    "score": 77.99246,
+    "projbounds_lower": "788204,5958142",
+    "projbounds_upper": "790050,5960459",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "79f0c5f4-1418-11ee-9a23-539cde632f80",
+    "_resourceGroup": "Dettmannsdorf Bebauungsplan Nr. 8",
+    "title": "BPlan Nr. 8  Dettmannsdorf BPlan Nr. 8 Dettmannsdorf \"Solarpark nördlich von Grünheide\"",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/B-Plan Nr-825050.pdf"
+    ],
+    "x_planstatusCode": [
+     "4000"
+    ],
+    "x_planartCode": [
+     "10001"
+    ],
+    "x_planartText": [
+     "Qualifizierter B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13073015"
+    ],
+    "x_gemeinde": [
+     "Dettmannsdorf"
+    ],
+    "x_regionalschluessel": [
+     "130735360015"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "73"
+    ],
+    "x_landkreis": [
+     "Vorpommern-Rügen"
+    ],
+    "x_landkreis_schluessel": [
+     "13073"
+    ],
+    "x_VKZ": [
+     "5360"
+    ],
+    "x_amt": [
+     "Recknitz-Trebeltal"
+    ],
+    "x_amt_schluessel": [
+     "5360"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "8"
+    ],
+    "x_inkrafttretensdatum": [
+     "2023-11-17 00:00:00"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Planzeichnung (Teil A) + Text (Teil B)"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "4000"
+    ],
+    "x_rechtsstandtext": [
+     "In Kraft getreten"
+    ],
+    "x_gmlid": [
+     "79f0c5f4-1418-11ee-9a23-539cde632f80"
+    ],
+    "lowerbounds": "54.11531942482241,12.54908020877158",
+    "upperbounds": "54.12421602506831,12.565431650404108",
+    "lon_min": 12.54908020877158,
+    "lon_max": 12.565431650404108,
+    "lat_min": 54.11531942482241,
+    "lat_max": 54.12421602506831,
+    "x_centroid": [
+     "6002732.033374889,732453.9527541491"
+    ],
+    "x_lowerbounds": [
+     "6002193.450071696,731904.5900229728"
+    ],
+    "x_upperbounds": [
+     "6003165.242401841,733004.453159838"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "cae7c77a45996091e82cea6f93f8197c!e3fcdd1c195790928fbc4581946c936ad3d634a2c4469a44971b1f9ba556bb67",
+    "_resourceIndexed": "2026-10-27T09:23:34Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=79f0c5f4-1418-11ee-9a23-539cde632f80",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194301157179392,
+    "[elevated]": false,
+    "score": 77.96289,
+    "projbounds_lower": "731950,6002175",
+    "projbounds_upper": "732969,6003218",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "578eedba-433f-11e8-88d4-d7d095a3eadf",
+    "_resourceGroup": "Sukow Vorhabenbezogener B-Plan Nr. 12",
+    "title": "Vorhabensbezogener BPlan Nr. 12  Sukow OT Sukow Bürgersolarpark Sukow",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/130765668133_00000000_VBP_008_UP_000_0_R_G_000_5006.pdf"
+    ],
+    "x_planstatusCode": [
+     "4000"
+    ],
+    "x_planstatus": [
+     "Rechtskraft"
+    ],
+    "x_planartCode": [
+     "3000"
+    ],
+    "x_planartText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "3000"
+    ],
+    "x_planarthauptText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_GKZ": [
+     "13076133"
+    ],
+    "x_gemeinde": [
+     "Sukow"
+    ],
+    "x_regionalschluessel": [
+     "130765668133"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "76"
+    ],
+    "x_landkreis": [
+     "Ludwigslust-Parchim"
+    ],
+    "x_landkreis_schluessel": [
+     "13076"
+    ],
+    "x_VKZ": [
+     "5668"
+    ],
+    "x_amt": [
+     "Crivitz"
+    ],
+    "x_amt_schluessel": [
+     "5668"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "12"
+    ],
+    "x_inkrafttretensdatum": [
+     "2011-05-12 00:00:00"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Eingescannter Plan in PDF-Format"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_rechtsstandcode": [
+     "4000"
+    ],
+    "x_rechtsstandtext": [
+     "In Kraft getreten"
+    ],
+    "x_gmlid": [
+     "578eedba-433f-11e8-88d4-d7d095a3eadf"
+    ],
+    "lowerbounds": "53.55425159102783,11.5654570544689",
+    "upperbounds": "53.56019068329331,11.586651087476667",
+    "lon_min": 11.5654570544689,
+    "lon_max": 11.586651087476667,
+    "lat_min": 53.55425159102783,
+    "lat_max": 53.56019068329331,
+    "x_centroid": [
+     "5937264.2917329,670544.6686588523"
+    ],
+    "x_lowerbounds": [
+     "5936990.680557576,669939.2134931365"
+    ],
+    "x_upperbounds": [
+     "5937662.041298245,671326.1827800198"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "8b4e50446ee000475fb902bb94c61ac3!d9edb0051ce234ef5663b7cd19ca91be2797b318b35cf2cdf8ddb5a2d0b8eeb9",
+    "_resourceIndexed": "2026-10-27T09:23:31Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=578eedba-433f-11e8-88d4-d7d095a3eadf",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194298097434624,
+    "[elevated]": false,
+    "score": 77.94811,
+    "projbounds_lower": "669939,5936990",
+    "projbounds_upper": "671318,5937702",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "06eef634-9196-11ed-9ff0-275813261164",
+    "_resourceGroup": "Groß Kiesow Bebauungsplan Nr. 3",
+    "title": "BPlan Nr. 3  Groß Kiesow Solarpark an der Bahntrasse Stralsund-Pasewalk",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/07-171523.pdf"
+    ],
+    "x_planstatusCode": [
+     "2000"
+    ],
+    "x_planartCode": [
+     "10000"
+    ],
+    "x_planartText": [
+     "Einfacher B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13075041"
+    ],
+    "x_gemeinde": [
+     "Groß Kiesow"
+    ],
+    "x_regionalschluessel": [
+     "130755563041"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "75"
+    ],
+    "x_landkreis": [
+     "Vorpommern-Greifswald"
+    ],
+    "x_landkreis_schluessel": [
+     "13075"
+    ],
+    "x_VKZ": [
+     "5563"
+    ],
+    "x_amt": [
+     "Züssow"
+    ],
+    "x_amt_schluessel": [
+     "5563"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "3"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Bekanntmachung öffentliche Auslegung"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "50000"
+    ],
+    "x_rechtsstandtext": [
+     "Aufgehoben"
+    ],
+    "x_gmlid": [
+     "06eef634-9196-11ed-9ff0-275813261164"
+    ],
+    "lowerbounds": "54.003358019657924,13.47808244047064",
+    "upperbounds": "54.01047511392899,13.498196100017022",
+    "lon_min": 13.47808244047064,
+    "lon_max": 13.498196100017022,
+    "lat_min": 54.003358019657924,
+    "lat_max": 54.01047511392899,
+    "x_centroid": [
+     "5993611.887425293,794265.4365251438"
+    ],
+    "x_lowerbounds": [
+     "5993225.723171103,793417.0887861797"
+    ],
+    "x_upperbounds": [
+     "5994004.594976536,794734.3735444366"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "bbd439920e9f0838cb2b546e5df40f27!6d74da9b261180fdeae0709ec40ee453bac33beb0117a90c2621273dbb47c398",
+    "_resourceIndexed": "2026-10-27T09:23:34Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=06eef634-9196-11ed-9ff0-275813261164",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194301575561216,
+    "[elevated]": false,
+    "score": 77.94811,
+    "projbounds_lower": "793420,5993180",
+    "projbounds_upper": "794686,5994054",
+    "proj": "EPSG:25832"
+   }
+  ]
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "results": [
+  [
+   {
+    "_resourceLinkId": "a5645020-039b-11ef-83de-d36644edb820",
+    "_resourceGroup": "Zemitz Vorhabenbezogener B-Plan Nr. 4",
+    "title": "Vorhabensbezogener BPlan Nr. 4  Zemitz PVA II Zemitz – westlich der Straße Am Eichenhag",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/Bekanntmachung AB vorh-413820.pdf"
+    ],
+    "x_planstatusCode": [
+     "2000"
+    ],
+    "x_planartCode": [
+     "3000"
+    ],
+    "x_planartText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "3000"
+    ],
+    "x_planarthauptText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_GKZ": [
+     "13075147"
+    ],
+    "x_gemeinde": [
+     "Zemitz"
+    ],
+    "x_regionalschluessel": [
+     "130755551147"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "75"
+    ],
+    "x_landkreis": [
+     "Vorpommern-Greifswald"
+    ],
+    "x_landkreis_schluessel": [
+     "13075"
+    ],
+    "x_VKZ": [
+     "5551"
+    ],
+    "x_amt": [
+     "Am Peenestrom"
+    ],
+    "x_amt_schluessel": [
+     "5551"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "4"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Bekanntmachung Aufstellungsbeschluss"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "2000"
+    ],
+    "x_rechtsstandtext": [
+     "Entwurf"
+    ],
+    "x_gmlid": [
+     "a5645020-039b-11ef-83de-d36644edb820"
+    ],
+    "lowerbounds": "53.96816930787208,13.761348136925632",
+    "upperbounds": "53.9705503470958,13.76931903932648",
+    "lon_min": 13.761348136925632,
+    "lon_max": 13.76931903932648,
+    "lat_min": 53.96816930787208,
+    "lat_max": 53.9705503470958,
+    "x_centroid": [
+     "5990619.247309902,812478.3639619277"
+    ],
+    "x_lowerbounds": [
+     "5990481.898448907,812231.4417359836"
+    ],
+    "x_upperbounds": [
+     "5990781.742037152,812735.9151567835"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "38da55e46cfb4895cd37b8715642cb17!4593557c12d7409db00e7722de3e936b2d54a933c97c43f798b34fb99d9f058f",
+    "_resourceIndexed": "2026-10-27T09:23:35Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=a5645020-039b-11ef-83de-d36644edb820",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194303178833920,
+    "[elevated]": false,
+    "score": 1140.0186,
+    "projbounds_lower": "812231,5990481",
+    "projbounds_upper": "812735,5990781",
+    "proj": "EPSG:25832"
+   }
+  ]
+ ]
+}

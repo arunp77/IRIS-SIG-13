@@ -1,0 +1,527 @@
+{
+ "results": [
+  [
+   {
+    "_resourceLinkId": "578c6b8a-433f-11e8-88d4-9b6c62986db2",
+    "_resourceGroup": "Damshagen Bebauungsplan Nr. 2",
+    "title": "BPlan Nr. 2  Damshagen OT Moor",
+    "abstract": [
+     "Moor, Altgemeindekennzahl: 13058112"
+    ],
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/B-Plan Nr-734809.pdf"
+    ],
+    "x_planstatusCode": [
+     "4000"
+    ],
+    "x_planstatus": [
+     "Rechtskraft"
+    ],
+    "x_planartCode": [
+     "10001"
+    ],
+    "x_planartText": [
+     "Qualifizierter B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13074016"
+    ],
+    "x_gemeinde": [
+     "Damshagen"
+    ],
+    "x_regionalschluessel": [
+     "130745454016"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "74"
+    ],
+    "x_landkreis": [
+     "Nordwestmecklenburg"
+    ],
+    "x_landkreis_schluessel": [
+     "13074"
+    ],
+    "x_VKZ": [
+     "5454"
+    ],
+    "x_amt": [
+     "Klützer Winkel"
+    ],
+    "x_amt_schluessel": [
+     "5454"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "2"
+    ],
+    "x_inkrafttretensdatum": [
+     "2003-12-10 00:00:00"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Eingescannter Plan in PDF-Format"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "4000"
+    ],
+    "x_rechtsstandtext": [
+     "In Kraft getreten"
+    ],
+    "x_gmlid": [
+     "578c6b8a-433f-11e8-88d4-9b6c62986db2"
+    ],
+    "lowerbounds": "53.901820996981556,11.105159108838695",
+    "upperbounds": "53.90407046244752,11.109393815598855",
+    "lon_min": 11.105159108838695,
+    "lon_max": 11.109393815598855,
+    "lat_min": 53.901820996981556,
+    "lat_max": 53.90407046244752,
+    "x_centroid": [
+     "5974776.547611299,638448.6066991293"
+    ],
+    "x_lowerbounds": [
+     "5974654.2280186135,638305.7993056857"
+    ],
+    "x_upperbounds": [
+     "5974908.022343166,638579.5313007127"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "af667ed92df8c4e02dc74730f2b4b747!680a9fa1e682b8decad473832bf2ecdbd6f28fb04032d6e59420b8c69b05c2ec",
+    "_resourceIndexed": "2026-10-27T09:23:29Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=578c6b8a-433f-11e8-88d4-9b6c62986db2",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194296714362880,
+    "[elevated]": false,
+    "score": 1055.1877,
+    "projbounds_lower": "638307,5974651",
+    "projbounds_upper": "638577,5974910",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "5784ffc6-433f-11e8-88d4-575438a2be83",
+    "_resourceGroup": "Melz Bebauungsplan Nr. 1",
+    "title": "BPlan Nr. 1  Melz Zum Rode Moor",
+    "abstract": [
+     "Plan-ID:"
+    ],
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/130715159097_00000000_QBP_001_UP_000_0_R_G_000_5001.pdf"
+    ],
+    "x_planstatusCode": [
+     "4000"
+    ],
+    "x_planstatus": [
+     "Rechtskraft"
+    ],
+    "x_planartCode": [
+     "10001"
+    ],
+    "x_planartText": [
+     "Qualifizierter B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13071097"
+    ],
+    "x_gemeinde": [
+     "Melz"
+    ],
+    "x_regionalschluessel": [
+     "130715159097"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5159"
+    ],
+    "x_amt": [
+     "Röbel-Müritz"
+    ],
+    "x_amt_schluessel": [
+     "5159"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "1"
+    ],
+    "x_inkrafttretensdatum": [
+     "2002-12-17 00:00:00"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Eingescannter Plan in PDF-Format"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "4000"
+    ],
+    "x_rechtsstandtext": [
+     "In Kraft getreten"
+    ],
+    "x_gmlid": [
+     "5784ffc6-433f-11e8-88d4-575438a2be83"
+    ],
+    "lowerbounds": "53.300004800195296,12.614811570346626",
+    "upperbounds": "53.30126778927485,12.616614339995426",
+    "lon_min": 12.614811570346626,
+    "lon_max": 12.616614339995426,
+    "lat_min": 53.300004800195296,
+    "lat_max": 53.30126778927485,
+    "x_centroid": [
+     "5911813.50942277,740916.798027482"
+    ],
+    "x_lowerbounds": [
+     "5911742.576366319,740859.4580158988"
+    ],
+    "x_upperbounds": [
+     "5911883.396734624,740975.2454589964"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "217cba4a4b3bc3f72f1281a81dcbe6ac!b550171df8b571b18adcf2eec714229961021f1ef80feb51ab965633e4b9abb6",
+    "_resourceIndexed": "2026-10-27T09:23:22Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=5784ffc6-433f-11e8-88d4-575438a2be83",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194288619356160,
+    "[elevated]": false,
+    "score": 900.8506,
+    "projbounds_lower": "740860,5911739",
+    "projbounds_upper": "740973,5911886",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e",
+    "_resourceGroup": "Werder Vorhabenbezogener B-Plan Nr. 3",
+    "title": "Vorhabensbezogener BPlan Nr. 3  Werder Moor-Solarpark Werder",
+    "x_planartCode": [
+     "3000"
+    ],
+    "x_planartText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "3000"
+    ],
+    "x_planarthauptText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_GKZ": [
+     "13071158"
+    ],
+    "x_gemeinde": [
+     "Werder"
+    ],
+    "x_regionalschluessel": [
+     "130715163158"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5163"
+    ],
+    "x_amt": [
+     "Treptower Tollensewinkel"
+    ],
+    "x_amt_schluessel": [
+     "5163"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "3"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "2200"
+    ],
+    "x_rechtsstandtext": [
+     "Frühzeitige Öffentlichkeitsbeteiligung"
+    ],
+    "x_gmlid": [
+     "0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e"
+    ],
+    "lowerbounds": "53.69229428004221,13.365875866137479",
+    "upperbounds": "53.71203617101399,13.395925978316152",
+    "lon_min": 13.365875866137479,
+    "lon_max": 13.395925978316152,
+    "lat_min": 53.69229428004221,
+    "lat_max": 53.71203617101399,
+    "x_centroid": [
+     "5959287.734432664,789102.5358501791"
+    ],
+    "x_lowerbounds": [
+     "5958204.049621437,788170.8637373258"
+    ],
+    "x_upperbounds": [
+     "5960435.156900034,790079.8333423359"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "49a849f93347451881cb823f50415c9e!d920a0476adbd4138dde6d479376109151f08b1f3b4c52315cedaa1fb4c8c905",
+    "_resourceIndexed": "2026-10-27T09:23:24Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=0ed74d33-db1e-4ce1-b8f0-6eedf602bc0e",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194291002769408,
+    "[elevated]": false,
+    "score": 896.24414,
+    "projbounds_lower": "788204,5958142",
+    "projbounds_upper": "790050,5960459",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "def41e5c-9c3d-11ef-9b0f-ebdc009c4c30",
+    "_resourceGroup": "Born a. Darß Innenbereichssatzung Nr. 0",
+    "title": "Innenbereichssatzung Born a. Darß \"Nördlich im Moor\"",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/34_4_1_u_3_Born_Noerdlich-im-Moor-885895.pdf"
+    ],
+    "x_planstatusCode": [
+     "4000"
+    ],
+    "x_planartCode": [
+     "40002"
+    ],
+    "x_planartText": [
+     "Ergaenzungssatzung"
+    ],
+    "x_planarthauptCode": [
+     "4000"
+    ],
+    "x_planarthauptText": [
+     "Innenbereichssatzung"
+    ],
+    "x_GKZ": [
+     "13073012"
+    ],
+    "x_gemeinde": [
+     "Born a. Darß"
+    ],
+    "x_regionalschluessel": [
+     "130735354012"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "73"
+    ],
+    "x_landkreis": [
+     "Vorpommern-Rügen"
+    ],
+    "x_landkreis_schluessel": [
+     "13073"
+    ],
+    "x_VKZ": [
+     "5354"
+    ],
+    "x_amt": [
+     "Darß/Fischland"
+    ],
+    "x_amt_schluessel": [
+     "5354"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "0"
+    ],
+    "x_inkrafttretensdatum": [
+     "2014-06-05 00:00:00"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Innenbereichssatzung Nördlich im Moor"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_rechtsstandcode": [
+     "4000"
+    ],
+    "x_rechtsstandtext": [
+     "In Kraft getreten"
+    ],
+    "x_gmlid": [
+     "def41e5c-9c3d-11ef-9b0f-ebdc009c4c30"
+    ],
+    "lowerbounds": "54.38353650373532,12.525479302701527",
+    "upperbounds": "54.38417453410737,12.526833128888255",
+    "lon_min": 12.525479302701527,
+    "lon_max": 12.526833128888255,
+    "lat_min": 54.38353650373532,
+    "lat_max": 54.38417453410737,
+    "x_centroid": [
+     "6031974.833886019,728956.3108210589"
+    ],
+    "x_lowerbounds": [
+     "6031925.0996831255,728914.1071320768"
+    ],
+    "x_upperbounds": [
+     "6031994.798453671,729002.5204364243"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "8405eea9ff61b432c27d29ab95fb781c!991c919ac4a04a675084d87cf6097af436376fde1ce59aba60e80990c90f1993",
+    "_resourceIndexed": "2026-10-27T09:23:32Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=def41e5c-9c3d-11ef-9b0f-ebdc009c4c30",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194298867089408,
+    "[elevated]": false,
+    "score": 873.4325,
+    "projbounds_lower": "728917,6031923",
+    "projbounds_upper": "729001,6031999",
+    "proj": "EPSG:25832"
+   }
+  ]
+ ]
+}

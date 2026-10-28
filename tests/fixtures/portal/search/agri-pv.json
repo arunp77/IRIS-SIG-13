@@ -1,0 +1,264 @@
+{
+ "results": [
+  [
+   {
+    "_resourceLinkId": "5b611dce-4bd4-11ea-afa7-87b6b3c7cd7c",
+    "_resourceGroup": "Friedland, Stadt Bebauungsplan Nr. 23",
+    "title": "BPlan Nr. 23  Friedland, Stadt Photovoltaikanlage Bresewitzer Brille_PV",
+    "abstract": [
+     "Plan-ID: 2750"
+    ],
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/B-Plan_Nr_23_PV_Bresewitzer_Brille_Plan-475423.pdf"
+    ],
+    "x_planstatusCode": [
+     "4000"
+    ],
+    "x_planstatus": [
+     "Rechtskraft"
+    ],
+    "x_planartCode": [
+     "10001"
+    ],
+    "x_planartText": [
+     "Qualifizierter B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13071035"
+    ],
+    "x_gemeinde": [
+     "Friedland, Stadt"
+    ],
+    "x_regionalschluessel": [
+     "130715152035"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5152"
+    ],
+    "x_amt": [
+     "Friedland"
+    ],
+    "x_amt_schluessel": [
+     "5152"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "23"
+    ],
+    "x_inkrafttretensdatum": [
+     "2017-11-29 00:00:00"
+    ],
+    "x_externereferenzbeschreibung": [
+     "B-Plan"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "4000"
+    ],
+    "x_rechtsstandtext": [
+     "In Kraft getreten"
+    ],
+    "x_gmlid": [
+     "5b611dce-4bd4-11ea-afa7-87b6b3c7cd7c"
+    ],
+    "lowerbounds": "53.689719077255226,13.518703861244015",
+    "upperbounds": "53.694219785993724,13.526986933035667",
+    "lon_min": 13.518703861244015,
+    "lon_max": 13.526986933035667,
+    "lat_min": 53.689719077255226,
+    "lat_max": 53.694219785993724,
+    "x_centroid": [
+     "5958767.082515111,798575.1945991608"
+    ],
+    "x_lowerbounds": [
+     "5958509.147039135,798284.9793210656"
+    ],
+    "x_upperbounds": [
+     "5959010.283929115,798837.5501141541"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "c2b5e89fa96feb33a658239974bfe976!9083c91fb7798d5e3e1c2e8cfc6e99b5566b260bfb397dce653f1df220f30733",
+    "_resourceIndexed": "2026-10-27T09:23:24Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=5b611dce-4bd4-11ea-afa7-87b6b3c7cd7c",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194290162860032,
+    "[elevated]": false,
+    "score": 695.3856,
+    "projbounds_lower": "798304,5958487",
+    "projbounds_upper": "798819,5959022",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "3a468ec0-7a60-11ea-bbf0-4f693f2e139a",
+    "_resourceGroup": "Neukalen, Peenestadt Vorhabenbezogener B-Plan Nr. 3",
+    "title": "Vorhabensbezogener BPlan Nr. 3  Neukalen, Peenestadt SO Fotovoltaik am Gewerbegebiet Nord_PV",
+    "abstract": [
+     "Plan-ID: 2347"
+    ],
+    "x_planstatusCode": [
+     "2000"
+    ],
+    "x_planstatus": [
+     "Entwurf"
+    ],
+    "x_planartCode": [
+     "3000"
+    ],
+    "x_planartText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "3000"
+    ],
+    "x_planarthauptText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_GKZ": [
+     "13071109"
+    ],
+    "x_gemeinde": [
+     "Neukalen, Peenestadt"
+    ],
+    "x_regionalschluessel": [
+     "130715153109"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5153"
+    ],
+    "x_amt": [
+     "Malchin am Kummerower See"
+    ],
+    "x_amt_schluessel": [
+     "5153"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "3"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_rechtsstandcode": [
+     "2000"
+    ],
+    "x_rechtsstandtext": [
+     "Entwurf"
+    ],
+    "x_gmlid": [
+     "3a468ec0-7a60-11ea-bbf0-4f693f2e139a"
+    ],
+    "lowerbounds": "53.83137759134502,12.790796542471556",
+    "upperbounds": "53.834233013044226,12.796298606060862",
+    "lon_min": 12.790796542471556,
+    "lon_max": 12.796298606060862,
+    "lat_min": 53.83137759134502,
+    "lat_max": 53.834233013044226,
+    "x_centroid": [
+     "5971589.040649202,749593.7467888581"
+    ],
+    "x_lowerbounds": [
+     "5971442.044982776,749415.9141818511"
+    ],
+    "x_upperbounds": [
+     "5971743.81131178,749787.1738467299"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "d7a6a7d25a7475649bd91f85fa03765c!f07a7af92a0f78488ad46825c57b277313dc9d2e84c7db51254a64da200c99d1",
+    "_resourceIndexed": "2026-10-27T09:23:24Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=3a468ec0-7a60-11ea-bbf0-4f693f2e139a",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194290668273664,
+    "[elevated]": false,
+    "score": 695.3856,
+    "projbounds_lower": "749432,5971426",
+    "projbounds_upper": "749777,5971763",
+    "proj": "EPSG:25832"
+   }
+  ]
+ ]
+}

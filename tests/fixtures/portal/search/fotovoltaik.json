@@ -1,0 +1,125 @@
+{
+ "results": [
+  [
+   {
+    "_resourceLinkId": "3a468ec0-7a60-11ea-bbf0-4f693f2e139a",
+    "_resourceGroup": "Neukalen, Peenestadt Vorhabenbezogener B-Plan Nr. 3",
+    "title": "Vorhabensbezogener BPlan Nr. 3  Neukalen, Peenestadt SO Fotovoltaik am Gewerbegebiet Nord_PV",
+    "abstract": [
+     "Plan-ID: 2347"
+    ],
+    "x_planstatusCode": [
+     "2000"
+    ],
+    "x_planstatus": [
+     "Entwurf"
+    ],
+    "x_planartCode": [
+     "3000"
+    ],
+    "x_planartText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "3000"
+    ],
+    "x_planarthauptText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_GKZ": [
+     "13071109"
+    ],
+    "x_gemeinde": [
+     "Neukalen, Peenestadt"
+    ],
+    "x_regionalschluessel": [
+     "130715153109"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5153"
+    ],
+    "x_amt": [
+     "Malchin am Kummerower See"
+    ],
+    "x_amt_schluessel": [
+     "5153"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "3"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_rechtsstandcode": [
+     "2000"
+    ],
+    "x_rechtsstandtext": [
+     "Entwurf"
+    ],
+    "x_gmlid": [
+     "3a468ec0-7a60-11ea-bbf0-4f693f2e139a"
+    ],
+    "lowerbounds": "53.83137759134502,12.790796542471556",
+    "upperbounds": "53.834233013044226,12.796298606060862",
+    "lon_min": 12.790796542471556,
+    "lon_max": 12.796298606060862,
+    "lat_min": 53.83137759134502,
+    "lat_max": 53.834233013044226,
+    "x_centroid": [
+     "5971589.040649202,749593.7467888581"
+    ],
+    "x_lowerbounds": [
+     "5971442.044982776,749415.9141818511"
+    ],
+    "x_upperbounds": [
+     "5971743.81131178,749787.1738467299"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "d7a6a7d25a7475649bd91f85fa03765c!f07a7af92a0f78488ad46825c57b277313dc9d2e84c7db51254a64da200c99d1",
+    "_resourceIndexed": "2026-10-27T09:23:24Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=3a468ec0-7a60-11ea-bbf0-4f693f2e139a",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194290668273664,
+    "[elevated]": false,
+    "score": 1422.8549,
+    "projbounds_lower": "749432,5971426",
+    "projbounds_upper": "749777,5971763",
+    "proj": "EPSG:25832"
+   }
+  ]
+ ]
+}

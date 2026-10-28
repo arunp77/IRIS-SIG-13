@@ -1,0 +1,630 @@
+{
+ "results": [
+  [
+   {
+    "_resourceLinkId": "150b8f30-3104-11ee-b36d-c3624a7025e8",
+    "_resourceGroup": "Reimershagen Bebauungsplan Nr. 7",
+    "title": "BPlan Nr. 7  Reimershagen \"Photovoltaikanlage Kieswerk Groß Tessin\"",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/Bekanntmachung erneute Offenlage-934273.pdf"
+    ],
+    "x_planstatusCode": [
+     "2000"
+    ],
+    "x_planartCode": [
+     "10001"
+    ],
+    "x_planartText": [
+     "Qualifizierter B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13072084"
+    ],
+    "x_gemeinde": [
+     "Reimershagen"
+    ],
+    "x_regionalschluessel": [
+     "130725255084"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "72"
+    ],
+    "x_landkreis": [
+     "Landkreis Rostock"
+    ],
+    "x_landkreis_schluessel": [
+     "13072"
+    ],
+    "x_VKZ": [
+     "5255"
+    ],
+    "x_amt": [
+     "Güstrow-Land"
+    ],
+    "x_amt_schluessel": [
+     "5255"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "7"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Bekanntmachung im PDF-Format "
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "2000"
+    ],
+    "x_rechtsstandtext": [
+     "Entwurf"
+    ],
+    "x_gmlid": [
+     "150b8f30-3104-11ee-b36d-c3624a7025e8"
+    ],
+    "lowerbounds": "53.674317067090755,12.236728045187597",
+    "upperbounds": "53.68174574727371,12.25063732484978",
+    "lon_min": 12.236728045187597,
+    "lon_max": 12.25063732484978,
+    "lat_min": 53.674317067090755,
+    "lat_max": 53.68174574727371,
+    "x_centroid": [
+     "5952708.505236407,714237.9982611714"
+    ],
+    "x_lowerbounds": [
+     "5952181.852263621,713753.9560963099"
+    ],
+    "x_upperbounds": [
+     "5952991.448302207,714667.616610509"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "8a681e846c1c0fedee4dfbbc172399ea!55ea6b3aa32568a7f5411998c41998c06693114bb7cf2ebedf962e45702dcce0",
+    "_resourceIndexed": "2026-10-27T09:23:26Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=150b8f30-3104-11ee-b36d-c3624a7025e8",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194293808758784,
+    "[elevated]": false,
+    "score": 82.865906,
+    "projbounds_lower": "713784,5952154",
+    "projbounds_upper": "714665,5953022",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "cf1b05c0-2732-11ef-87bb-47c1e8e0114e",
+    "_resourceGroup": "Neubrandenburg, Vier-Tore-Stadt FPlan Nr. 0",
+    "title": "FPlan Neubrandenburg, Vier-Tore-Stadt 28. Änderung des Flächennutzungsplanes, Teilfläche \"Photovoltaikanlage Krügerkamp/Hinterste Straße\" Nr. 0",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/FNP_28-Aenderung_Bekanntmachung-606051.PDF"
+    ],
+    "x_planstatusCode": [
+     "1000"
+    ],
+    "x_planartCode": [
+     "1000"
+    ],
+    "x_planartText": [
+     "FPlan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "FPlan"
+    ],
+    "x_GKZ": [
+     "13071107"
+    ],
+    "x_gemeinde": [
+     "Neubrandenburg, Vier-Tore-Stadt"
+    ],
+    "x_regionalschluessel": [
+     "130710107107"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "0107"
+    ],
+    "x_amt": [
+     "Neubrandenburg, Vier-Tore-Stadt"
+    ],
+    "x_amt_schluessel": [
+     "101"
+    ],
+    "x_plankategorie": [
+     "F-Plan"
+    ],
+    "x_plannummer": [
+     "0"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Bekanntmachung Aufstellungsbeschluss"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "1000"
+    ],
+    "x_rechtsstandtext": [
+     "Aufstellungsbeschluss"
+    ],
+    "x_gmlid": [
+     "cf1b05c0-2732-11ef-87bb-47c1e8e0114e"
+    ],
+    "lowerbounds": "53.565665005272756,13.238108140910905",
+    "upperbounds": "53.569517541493084,13.242365650647596",
+    "lon_min": 13.238108140910905,
+    "lon_max": 13.242365650647596,
+    "lat_min": 53.565665005272756,
+    "lat_max": 53.569517541493084,
+    "x_centroid": [
+     "5943773.903272535,780730.2988169278"
+    ],
+    "x_lowerbounds": [
+     "5943567.712680697,780593.5021159879"
+    ],
+    "x_upperbounds": [
+     "5943987.909582312,780881.2834202256"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V F-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "07a2cf5d872743162af62b0ab84194a4!349b8a232c78ba54d90a4673759951a298b7564fe5d58ea46935c684a2287c53",
+    "_resourceIndexed": "2026-10-27T09:23:43Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=fplan&id=cf1b05c0-2732-11ef-87bb-47c1e8e0114e",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V F-Plan"
+    ],
+    "_resourceClass": "fplan",
+    "_version_": 1880194311091388416,
+    "score": 82.75818,
+    "[elevated]": false,
+    "projbounds_lower": "780614,5943555",
+    "projbounds_upper": "780870,5944000",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "5b611dce-4bd4-11ea-afa7-87b6b3c7cd7c",
+    "_resourceGroup": "Friedland, Stadt Bebauungsplan Nr. 23",
+    "title": "BPlan Nr. 23  Friedland, Stadt Photovoltaikanlage Bresewitzer Brille_PV",
+    "abstract": [
+     "Plan-ID: 2750"
+    ],
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/B-Plan_Nr_23_PV_Bresewitzer_Brille_Plan-475423.pdf"
+    ],
+    "x_planstatusCode": [
+     "4000"
+    ],
+    "x_planstatus": [
+     "Rechtskraft"
+    ],
+    "x_planartCode": [
+     "10001"
+    ],
+    "x_planartText": [
+     "Qualifizierter B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13071035"
+    ],
+    "x_gemeinde": [
+     "Friedland, Stadt"
+    ],
+    "x_regionalschluessel": [
+     "130715152035"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "71"
+    ],
+    "x_landkreis": [
+     "Mecklenburgische Seenplatte"
+    ],
+    "x_landkreis_schluessel": [
+     "13071"
+    ],
+    "x_VKZ": [
+     "5152"
+    ],
+    "x_amt": [
+     "Friedland"
+    ],
+    "x_amt_schluessel": [
+     "5152"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "23"
+    ],
+    "x_inkrafttretensdatum": [
+     "2017-11-29 00:00:00"
+    ],
+    "x_externereferenzbeschreibung": [
+     "B-Plan"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "4000"
+    ],
+    "x_rechtsstandtext": [
+     "In Kraft getreten"
+    ],
+    "x_gmlid": [
+     "5b611dce-4bd4-11ea-afa7-87b6b3c7cd7c"
+    ],
+    "lowerbounds": "53.689719077255226,13.518703861244015",
+    "upperbounds": "53.694219785993724,13.526986933035667",
+    "lon_min": 13.518703861244015,
+    "lon_max": 13.526986933035667,
+    "lat_min": 53.689719077255226,
+    "lat_max": 53.694219785993724,
+    "x_centroid": [
+     "5958767.082515111,798575.1945991608"
+    ],
+    "x_lowerbounds": [
+     "5958509.147039135,798284.9793210656"
+    ],
+    "x_upperbounds": [
+     "5959010.283929115,798837.5501141541"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "c2b5e89fa96feb33a658239974bfe976!9083c91fb7798d5e3e1c2e8cfc6e99b5566b260bfb397dce653f1df220f30733",
+    "_resourceIndexed": "2026-10-27T09:23:24Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=5b611dce-4bd4-11ea-afa7-87b6b3c7cd7c",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194290162860032,
+    "[elevated]": false,
+    "score": 79.2092,
+    "projbounds_lower": "798304,5958487",
+    "projbounds_upper": "798819,5959022",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "a5a74c70-d971-11ef-93c4-132f39fd28ad",
+    "_resourceGroup": "Zarrentin am Schaalsee, Stadt Vorhabenbezogener B-Plan Nr. 41",
+    "title": "Vorhabensbezogener BPlan Nr. 41  Zarrentin am Schaalsee, Stadt Freiflächenphotovoltaik Neuenkirchen",
+    "x_planartCode": [
+     "3000"
+    ],
+    "x_planartText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "3000"
+    ],
+    "x_planarthauptText": [
+     "Vorhabenbezogener B-Plan"
+    ],
+    "x_GKZ": [
+     "13076159"
+    ],
+    "x_gemeinde": [
+     "Zarrentin am Schaalsee, Stadt"
+    ],
+    "x_regionalschluessel": [
+     "130765667159"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "76"
+    ],
+    "x_landkreis": [
+     "Ludwigslust-Parchim"
+    ],
+    "x_landkreis_schluessel": [
+     "13076"
+    ],
+    "x_VKZ": [
+     "5667"
+    ],
+    "x_amt": [
+     "Zarrentin"
+    ],
+    "x_amt_schluessel": [
+     "5667"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "41"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "1000"
+    ],
+    "x_verfahrentext": [
+     "Normal"
+    ],
+    "x_rechtsstandcode": [
+     "1000"
+    ],
+    "x_rechtsstandtext": [
+     "Aufstellungsbeschluss"
+    ],
+    "x_gmlid": [
+     "a5a74c70-d971-11ef-93c4-132f39fd28ad"
+    ],
+    "lowerbounds": "53.58136853889526,10.990063670589304",
+    "upperbounds": "53.59582068794449,11.011995670124978",
+    "lon_min": 10.990063670589304,
+    "lon_max": 11.011995670124978,
+    "lat_min": 53.58136853889526,
+    "lat_max": 53.59582068794449,
+    "x_centroid": [
+     "5939543.087510685,632325.9678121296"
+    ],
+    "x_lowerbounds": [
+     "5938808.034416604,631742.8267228471"
+    ],
+    "x_upperbounds": [
+     "5940407.802326691,633164.6580097774"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "c95c67e75ebefab5fea63ba18d1d185f!3c765ffa928b4389d6474bc24eae33a84d3b3efe037bcdaba0c5a608041d80f9",
+    "_resourceIndexed": "2026-10-27T09:23:30Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=a5a74c70-d971-11ef-93c4-132f39fd28ad",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194297605652480,
+    "[elevated]": false,
+    "score": 79.2092,
+    "projbounds_lower": "631745,5938787",
+    "projbounds_upper": "633151,5940435",
+    "proj": "EPSG:25832"
+   }
+  ],
+  [
+   {
+    "_resourceLinkId": "112173cc-b34c-11f0-9bf8-2344963de09f",
+    "_resourceGroup": "Ueckermünde, Stadt Seebad Bebauungsplan Nr. B-27",
+    "title": "BPlan Nr. B-27, 1. Änderung  Ueckermünde, Stadt Seebad BPlan Nr. B-27, 1. Änderung, Ueckermünde, Stadt Seebad Photovoltaikanlage Heideweg",
+    "x_dokumentURL": [
+     "https://bauleitplaene-mv.de/download/3_2026-05-26_TextBPlan27_1Ae_PV-Heideweg-790357.pdf"
+    ],
+    "x_planartCode": [
+     "10001"
+    ],
+    "x_planartText": [
+     "Qualifizierter B-Plan"
+    ],
+    "x_planarthauptCode": [
+     "1000"
+    ],
+    "x_planarthauptText": [
+     "Bebauungsplan"
+    ],
+    "x_GKZ": [
+     "13075136"
+    ],
+    "x_gemeinde": [
+     "Ueckermünde, Stadt Seebad"
+    ],
+    "x_regionalschluessel": [
+     "130750136136"
+    ],
+    "x_LKZ": [
+     "13"
+    ],
+    "x_land": [
+     "Mecklenburg Vorpommern"
+    ],
+    "x_KKZ": [
+     "75"
+    ],
+    "x_landkreis": [
+     "Vorpommern-Greifswald"
+    ],
+    "x_landkreis_schluessel": [
+     "13075"
+    ],
+    "x_VKZ": [
+     "0136"
+    ],
+    "x_amt": [
+     "Ueckermünde, Stadt Seebad"
+    ],
+    "x_amt_schluessel": [
+     "515"
+    ],
+    "x_plankategorie": [
+     "B-Plan"
+    ],
+    "x_plannummer": [
+     "B-27, 1. Änderung"
+    ],
+    "x_externereferenzbeschreibung": [
+     "Textbebauungsplan und Begründung im PDF-Format"
+    ],
+    "x_externereferenzart": [
+     "Dokument"
+    ],
+    "x_veraenderungssperre": [
+     "nein"
+    ],
+    "x_gruenordnungsplan": [
+     "nein"
+    ],
+    "x_erschliessungsvertrag": [
+     "nein"
+    ],
+    "x_durchfuehrungsvertrag": [
+     "nein"
+    ],
+    "x_staedtebaulichervertrag": [
+     "nein"
+    ],
+    "x_verfahrencode": [
+     "2000"
+    ],
+    "x_verfahrentext": [
+     "Parag13"
+    ],
+    "x_rechtsstandcode": [
+     "2000"
+    ],
+    "x_rechtsstandtext": [
+     "Entwurf"
+    ],
+    "x_gmlid": [
+     "112173cc-b34c-11f0-9bf8-2344963de09f"
+    ],
+    "lowerbounds": "53.73386713513946,14.079019053818715",
+    "upperbounds": "53.736457362792564,14.090056456705302",
+    "lon_min": 14.079019053818715,
+    "lon_max": 14.090056456705302,
+    "lat_min": 53.73386713513946,
+    "lat_max": 53.736457362792564,
+    "x_centroid": [
+     "5966066.940542097,835287.6632550067"
+    ],
+    "x_lowerbounds": [
+     "5965904.046258642,834904.4562228644"
+    ],
+    "x_upperbounds": [
+     "5966220.403827285,835627.9647384348"
+    ],
+    "_resourceSourceId": "Bau- und Planungsportal M-V B-Plan",
+    "_resourceType": "Bauleitplan",
+    "_resourceId": "b3d1fda8d72939080915611e3a54c9de!daef8da1a8df472ea6ac917e2d3cca585fa08e5489732963c08ce35eec12b54f",
+    "_resourceIndexed": "2026-10-27T09:23:34Z",
+    "_resourceURL": "https://www.bauportal-mv.de/Bauleitplaene/Uebersicht/Details?type=bplan&id=112173cc-b34c-11f0-9bf8-2344963de09f",
+    "_resourceRootSource": [
+     "Bau- und Planungsportal M-V B-Plan"
+    ],
+    "_resourceClass": "bplan",
+    "_version_": 1880194301521035264,
+    "score": 79.1488,
+    "[elevated]": false,
+    "projbounds_lower": "834915,5965894",
+    "projbounds_upper": "835621,5966234",
+    "proj": "EPSG:25832"
+   }
+  ]
+ ]
+}
