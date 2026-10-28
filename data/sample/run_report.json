@@ -1,0 +1,724 @@
+{
+  "records_seen": 1593,
+  "candidates": 802,
+  "search_problems": [],
+  "unmatched": [
+    {
+      "id": "bbba6724-99db-11f0-9ae7-1f0fbede305c",
+      "title": "Vorhabensbezogener BPlan Nr. 9 Siedenbrünzow Sondergebiet Batterieenergiespeicher am Umspannwerk"
+    },
+    {
+      "id": "7796735f-49d0-475f-86dc-c9675986793d",
+      "title": "Aussenbereichssatzung Bentwisch Am Umspannwerk Ursprungsplan"
+    },
+    {
+      "id": "7c2d4222-19fa-11f0-9128-9bd69ab84535",
+      "title": "BPlan Nr. 8 Siedenbrünzow Gewerbegebiet am Umspannwerk"
+    },
+    {
+      "id": "bdd2005e-a8f3-11f0-a22d-930773d58b4e",
+      "title": "Vorhabensbezogener BPlan Nr. 16 Ziegendorf OT Meierstorf \"Batteriepark Ziegendorf inkl. Umspannwerk\""
+    },
+    {
+      "id": "7a8b8e86-05c4-11ec-b417-57188b68a214",
+      "title": "BPlan Nr. 42 Sassnitz, Stadt Fährhafen Sassnitz - Erweiterungsgebiet Offshore Süd"
+    },
+    {
+      "id": "e6aa695c-4484-11e8-97be-3f33c6bf00dc",
+      "title": "FPlan Damshagen Teilplan Moor Nr. 0"
+    },
+    {
+      "id": "e6aa6a2e-4484-11e8-97be-5f3827abd6e9",
+      "title": "FPlan Damshagen Teilplan Parin 1. Änderung und Ergänzung Nr. 0"
+    },
+    {
+      "id": "578c6b8a-433f-11e8-88d4-9b6c62986db2",
+      "title": "BPlan Nr. 2 Damshagen OT Moor"
+    },
+    {
+      "id": "5784ffc6-433f-11e8-88d4-575438a2be83",
+      "title": "BPlan Nr. 1 Melz Zum Rode Moor"
+    },
+    {
+      "id": "def41e5c-9c3d-11ef-9b0f-ebdc009c4c30",
+      "title": "Innenbereichssatzung Born a. Darß \"Nördlich im Moor\""
+    },
+    {
+      "id": "24b3aef2-cfda-11ee-aa71-1fb48897790c",
+      "title": "BPlan Nr. 15 Leezen Wohnbebauung Groth Moor"
+    },
+    {
+      "id": "73891dbe-e621-11eb-98f2-abd334c19538",
+      "title": "Vorhabensbezogener BPlan Nr. XI/92 Schwerin, Landeshauptstadt Werder-/Burgstraße/Grosser Moor"
+    },
+    {
+      "id": "e3a1eca6-8d49-11f0-9349-ab2d6c60e6e5",
+      "title": "BPlan Nr. 1, 3. Änderung Kritzmow Weitenmoor 3. Änderung"
+    },
+    {
+      "id": "259871d7-0b24-41b2-9478-3a809625fa99",
+      "title": "BPlan Nr. 1 Kritzmow Weitenmoor Ursprungsplan"
+    },
+    {
+      "id": "e8ed8345-0bb7-4eba-8cbb-a4fde01fac60",
+      "title": "BPlan Nr. 1 Kritzmow Weitenmoor 2. Änderung 2. Änderung"
+    },
+    {
+      "id": "57854328-433f-11e8-88d4-07d1ab203840",
+      "title": "BPlan Nr. 6 Selmsdorf OT Lauen Herrenwiekers Kamp/ Krempelmoor"
+    },
+    {
+      "id": "5786cc7a-433f-11e8-88d4-d7c8010cc9d5",
+      "title": "BPlan Nr. 6 Selmsdorf OT Lauen Herrenwiekers Kamp/ Krempelmoor 2. Änderung"
+    },
+    {
+      "id": "57851aec-433f-11e8-88d4-370c6b1d000e",
+      "title": "BPlan Nr. 6 Selmsdorf OT Lauen Herrenwiekers Kamp/ Krempelmoor 1. Änderung und Ergänzung"
+    },
+    {
+      "id": "5780d522-433f-11e8-88d4-c300537967da",
+      "title": "BPlan Nr. 1 Roggenstorf OT Roggenstorf Nördl. und südl. Haffweg/ Moorer Str."
+    },
+    {
+      "id": "578b2c7a-433f-11e8-88d4-efba30ab96eb",
+      "title": "BPlan Nr. 1 Roggenstorf OT Roggenstorf Nördl. und südl. Haffweg/ Moorer Str. 1. Änderung"
+    },
+    {
+      "id": "579aea02-433f-11e8-88d4-f3886a5e050f",
+      "title": "Innenbereichssatzung Nr. 023-015i-SA00200 Dahmen Satzung der Gemeinde Dahmen über die Festlegeung und Abrundung der im Zusammenhang bebauten Ortslage Rothenmoor"
+    },
+    {
+      "id": "32f7cc98-ee17-11eb-84a1-eb6f99462db2",
+      "title": "BPlan Nr. 4 Wittenförden Woltersmoor"
+    },
+    {
+      "id": "01d7218e-ee19-11eb-ba8c-c3e458487f27",
+      "title": "BPlan Nr. 4, 1. Änderung Wittenförden Woltersmoor"
+    },
+    {
+      "id": "c29abac6-eedb-11eb-94d2-531bdf1dc5c6",
+      "title": "BPlan Nr. 4, 5. Änderung Wittenförden Woltersmoor"
+    },
+    {
+      "id": "42bfceea-eedb-11eb-aebf-c3e10a8edb34",
+      "title": "BPlan Nr. 4, 4. Änderung Wittenförden Woltersmoor"
+    },
+    {
+      "id": "fe21e862-eedb-11eb-9cfe-cf2e699fd398",
+      "title": "BPlan Nr. 4, 6. Änderung Wittenförden Woltersmoor"
+    },
+    {
+      "id": "cb675f2a-eebc-11eb-8207-d3396a27513e",
+      "title": "BPlan Nr. 4, 3. Änderung Wittenförden Woltersmoor"
+    },
+    {
+      "id": "46dee0fc-eebc-11eb-9be2-87663dac5112",
+      "title": "BPlan Nr. 4, 2. vereinfachte Änderung Wittenförden Woltersmoor"
+    },
+    {
+      "id": "578990e0-433f-11e8-88d4-33024b7c9360",
+      "title": "Innenbereichssatzung Pingelshagen Moorbrinker Weg"
+    },
+    {
+      "id": "57819a8e-433f-11e8-88d4-07a6f71e5abf",
+      "title": "BPlan Nr. 5 Lüdersdorf OT Herrnburg Peermoor 15. Änderung"
+    },
+    {
+      "id": "57868954-433f-11e8-88d4-6f94e0eec67c",
+      "title": "BPlan Nr. 5 Lüdersdorf OT Herrnburg Peermoor 9. Änderung"
+    },
+    {
+      "id": "578788ae-433f-11e8-88d4-d3b2937dc1b3",
+      "title": "BPlan Nr. 5 Lüdersdorf OT Herrnburg Peermoor 13. Änderung"
+    },
+    {
+      "id": "9f65f62e-b2a1-11e9-b119-e7256a492745",
+      "title": "BPlan Nr. 5 Lüdersdorf OT Herrnburg Peermoor 2. Änderung"
+    },
+    {
+      "id": "57854d1e-433f-11e8-88d4-1f281a204693",
+      "title": "BPlan Nr. 5 Lüdersdorf OT Herrnburg Peermoor 11. Änderung"
+    },
+    {
+      "id": "5789f238-433f-11e8-88d4-bf55fc532407",
+      "title": "BPlan Nr. 5 Lüdersdorf OT Herrnburg Peermoor 10. Änderung"
+    },
+    {
+      "id": "578bbf32-433f-11e8-88d4-7b2f1576d3fe",
+      "title": "BPlan Nr. 5 Lüdersdorf OT Herrnburg Peermoor 14. Änderung"
+    },
+    {
+      "id": "5788f8ba-433f-11e8-88d4-9f8a3dd05c91",
+      "title": "Innenbereichssatzung Upahl OT Upahl Testorfer Str. / Zum Torfmoor"
+    },
+    {
+      "id": "5785fcdc-433f-11e8-88d4-03db5922211d",
+      "title": "Innenbereichssatzung Klein Trebbow OT Moorbrink"
+    },
+    {
+      "id": "5fe00e2a-240d-11f0-8067-c34419630692",
+      "title": "BPlan Nr. (6) Grabow, Stadt \"Am Hufenmoor\" Ursprungsplan"
+    },
+    {
+      "id": "578888e4-433f-11e8-88d4-af4d8709ef47",
+      "title": "BPlan Nr. 6 Tribsees, Stadt OT Tribsees Waakstermoorweg"
+    },
+    {
+      "id": "35b5ae50-baac-11e9-8ff3-134eb0171128",
+      "title": "BPlan Nr. 10 Trassenheide, Ostseebad Ferienhausgebiet Trassenmoor"
+    },
+    {
+      "id": "cf42ad00-f377-11ec-a7da-339c595cc052",
+      "title": "BPlan Nr. 10 Trassenheide, Ostseebad Ferienhausgebiet Trassenmoor 1. Änderung"
+    },
+    {
+      "id": "5798d960-433f-11e8-88d4-0fa67b3b0564",
+      "title": "BPlan Nr. 6 Hohenfelde OT Hohenfelde Wohngebiet Am Torfmoorweg 1. Änderung"
+    },
+    {
+      "id": "578a624a-433f-11e8-88d4-2b0ab36758c8",
+      "title": "BPlan Nr. 3 Bergen auf Rügen, Stadt Wohnerweiterung Kiebitzmoor"
+    },
+    {
+      "id": "31c993cc-f2b5-11f0-af61-e3148c658c3f",
+      "title": "Innenbereichssatzung Kröpelin, Stadt Satzung über die Ergänzung des im Zusammenhang bebauten Ortsteils Kröpelin für den Bereich Am Torfmoor/Feldstraße"
+    },
+    {
+      "id": "b5d88726-3520-11ef-80af-d3275f75765a",
+      "title": "BPlan Nr. 023-023n-BP00900 Dahmen Bebauungsplan Nr. 9 der Gemeinde Dahmen \"Ferienhausgebiet Dahmen - Rothenmoor\""
+    },
+    {
+      "id": "e8e8be9a-a1a6-11ef-aac1-3795df114773",
+      "title": "BPlan Nr. (1) Eldena B-Plan \"Eldena GE 1\" 2. vereinfachte Änderung"
+    }
+  ],
+  "detail_errors": [],
+  "rejected": [],
+  "warnings": [
+    {
+      "id": "087854a0-7dc9-11ec-8c8a-c74e0c4aa76c",
+      "title": "BPlan Nr. 3 Vellahn \"Photovoltaik-Freiflächenanlage Melkof\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "6edfeb54-e843-11ee-aef6-236449260293",
+      "title": "BPlan Nr. 4 Rom OT Paarsch Sondergebiet \"Photovoltaik\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "9e7c25a0-b83f-11e9-8879-ffbab5f37011",
+      "title": "FPlan Zemitz 1. Änderung i.V.m. BP Nr. 1 SO Photovoltaik-Freiflächenanlage am Neubaugebiet Nr. 0",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "1caa24f4-e829-11ee-aacb-8b7b1bdcc300",
+      "title": "BPlan Nr. 2 Stolpe OT Stolpe \"Sondergebiet Photovoltaik I\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "f3c570fe-5c09-11ed-88b7-f7b30f25d119",
+      "title": "Vorhabensbezogener BPlan Nr. 2 Papendorf Photovoltaik-Park Papendorf",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "89e7bc24-5183-11f0-8640-f39bc182657c",
+      "title": "FPlan Domsühl Änderung Sondergebiet \"Photovoltaik Domsühl I\" OT Domsühl Nr. 2",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "9e7c1a92-b83f-11e9-8879-632304aee4b3",
+      "title": "FPlan Wolgast, Stadt 4. Änderung i.V.m. B-Plan Nr. 26 \"Sondergebiet Photovoltaik-Freiflächenanlagen an der Heberleinstraße\" Nr. 0",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "18ceb364-839b-11ea-8691-8394488b1597",
+      "title": "BPlan Nr. 5 Pragsdorf Sondergebiet Photovoltaik Georgendorf_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "1648b43c-5285-11f0-aa4d-63f01a4891cc",
+      "title": "Vorhabensbezogener BPlan Nr. 12 Domsühl OT Domsühl Sondergebiet \"Photovoltaik Domsühl I\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "75f46a56-ae44-11ef-b93e-9b6ecd1195a9",
+      "title": "FPlan Obere Warnow Änderung \"Photovoltaik-Freiflächenanlage Grebbin\" OT Grebbin Nr. 5",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "b796dbf6-9de9-11ec-9bae-63f0a67c02e4",
+      "title": "BPlan Nr. 24 B, 1.Änderung Friedland, Stadt Photovoltaik Alte Klärteiche Zuckerfabrik - 2.Bauabschnitt_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "b57913c0-ebbe-11ec-a4c8-438c53143447",
+      "title": "Vorhabensbezogener BPlan Nr. 1 Galenbeck Photovoltaik Klockow-Fleethof_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3bec6fc6-bc1d-11ee-a18e-37780f0b7ea8",
+      "title": "Vorhabensbezogener BPlan Nr. 9 Vellahn vorhabenbezogener Bebauungsplan Nr. 9 \"Photovoltaik-Freiflächenanlage Banzin\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "aa1b9af2-78b1-11ea-9005-33e3cb36b573",
+      "title": "BPlan Grabowhöfe Photovoltaik-Freiflächenanlage am Bahngleis Vielist_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3b252b5c-ae4b-11ef-b400-afe117949e86",
+      "title": "Vorhabensbezogener BPlan Nr. 3 Obere Warnow OT Grebbin \"Photovoltaik-Freiflächenanlage Grebbin\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "b9616f32-84cb-11ec-b202-e706cef31f9f",
+      "title": "BPlan Nr. 31 Zarrentin am Schaalsee, Stadt \"Sonstiges Sondergebiet Photovoltaik - Freiflächenanlage Bantin\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "c52ec060-4ea9-11ec-a35b-57e3984afb8e",
+      "title": "BPlan Nr. 3 Galenbeck Photovoltaikanlage Schwichtenberg_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "ea781986-3869-11eb-9028-1bfd2afb7d2c",
+      "title": "BPlan Nr. 1 Brietzig OT Brietzig Photovoltaikanlage",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "41d9693c-a091-11ed-b12f-4bb9920e6b31",
+      "title": "Vorhabensbezogener BPlan Bütow Photovoltaikanlage Solarpark Bütow",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "90830cdc-83ca-11ea-9811-23ad87788a91",
+      "title": "BPlan Nr. 3 Tützpatz Bebauungsplan Tützpatz Photovoltaikanlage Sandtagebau Schossow_PV Nr. 3",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "615a08ae-8d71-11ec-8237-5fdc9c07ffe1",
+      "title": "Vorhabensbezogener BPlan Nr. 5 Zehna \"Photovoltaikanlage Zehna\" der Gemeinde Zehna",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "20cf3260-ad75-11ef-9d4b-9b2c1b785ee7",
+      "title": "Vorhabensbezogener BPlan Nr. 1 Obere Warnow OT Wozinkel \"Sondergebiet Photovoltaikanlage Wozinkel\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "a66b8f66-845f-11ea-8449-1fb22d897c3f",
+      "title": "BPlan Nr. 2 Polzow OT Polzow Photovoltaikfreiflächenanlage",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3d0936f8-5d6c-11ec-bbef-bfa368927224",
+      "title": "BPlan Nr. 1 Vollrathsruhe Photovoltaikanlage Vollrathsruhe_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3cf74c2c-8ac4-11ee-8ba7-37445c915585",
+      "title": "BPlan Nr. 3 Gültz Bebauungsplan Gültz Photovoltaikanlage Gültz Gutsmilch_PV Nr. 3",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "c898c620-20e1-11f0-ba44-7b80950277d0",
+      "title": "BPlan Nr. 12 Schwaan, Stadt SO Photovoltaikanlage am Schaffrusch",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "2f351e1c-1fc0-11ee-b63e-c7c8e9b81a1d",
+      "title": "BPlan Nr. 5 Hohen Sprenz Sondergebiet \"Photovoltaikanlage Hohen Sprenz\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "f0cf078a-0033-11ec-9e4c-6ffb5a9c2327",
+      "title": "BPlan Friedland, Stadt Photovoltaikanlage Pleetzer Weg II_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "d5ddb4f4-846e-11ea-ad15-1fa4b0928321",
+      "title": "BPlan Nr. 5 Wolde Bebauungsplan Wolde Photovoltaikanlage Sandtagebau Schossow_PV Nr. 5",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "5820943e-1c08-11ee-b91e-8bdbe639770c",
+      "title": "BPlan Nr. 3 Dolgen am See Sondergebiet \"Photovoltaikanlage Sabel\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "f9c5592e-e01b-11ed-a88a-071d424660e8",
+      "title": "Vorhabensbezogener BPlan Nr. 6 Pokrent Photovoltaikanlage KGL Pokrent",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "12b093ac-acb8-11eb-9cfd-4bbc6d9f5fe6",
+      "title": "BPlan Nr. 50/19 Pasewalk, Stadt Photovoltaikanlage Stiftshof",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "c1e3c202-8662-11f1-b8a1-ff1383b60451",
+      "title": "Vorhabensbezogener BPlan Nr. 23 Süderholz Sondergebiet \"Photovoltaikanlage Bartmannshagen\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3132de18-74d1-11ea-8816-1313aff38ff3",
+      "title": "BPlan Nr. 3 Basedow Photovoltaikanlage Kies-/ Sandtagebau Basedow_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "4da9a244-ad74-11ef-b45f-c3b4ffb560c8",
+      "title": "FPlan Obere Warnow Änderung \"Sondergebiet Photovoltaikanlage Wozinkel\" OT Wozinkel Nr. 3",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "27435c68-631b-11f1-919f-d38ea1fb045a",
+      "title": "Vorhabensbezogener BPlan Nr. 06 Groß Teetzleben für die Freiflächenphotovoltaikanlage im westlichen Gemeindegebiet an der Gemeindegrenze zu Wildberg und Breesen_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3a468ec0-7a60-11ea-bbf0-4f693f2e139a",
+      "title": "Vorhabensbezogener BPlan Nr. 3 Neukalen, Peenestadt SO Fotovoltaik am Gewerbegebiet Nord_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "7d781b60-9f6f-11ec-a672-b7953218ac56",
+      "title": "BPlan Nr. 3 Karlsburg \"Solarpark Giesekenhagen\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "73ce50e8-5f36-11ed-9c30-ef05ff203bbf",
+      "title": "Vorhabensbezogener BPlan Blankensee Solarpark Watzkendorf_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "d0ee1c02-459b-11ef-9c23-db978eb00a40",
+      "title": "Vorhabensbezogener BPlan Nr. 11 Bentzin Solarpark Leussin II",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "2fd6b2c4-02cb-11ef-9b23-bb0af5533156",
+      "title": "FPlan Ziegendorf Änderung \"Solarpark Meierstorf Nord\" OT Meierstorf Nr. 8",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "4320c8e8-1b08-11ee-b549-ff2557ad9bd8",
+      "title": "BPlan Nr. 6 Gielow Solarpark auf der Deponie Gielow-Ausbau",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "0edc3fec-0339-11f1-b236-d7157927d2c6",
+      "title": "BPlan Kratzeburg Solarpark Dalmsdorf",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "e7de36e0-4e47-11ef-9ffe-3b0785923143",
+      "title": "Vorhabensbezogener BPlan Galenbeck Agri-Solarpark Sandhagen-Kotelow_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "d5c0f918-6a01-11ef-a273-cfe9805b59a9",
+      "title": "Vorhabensbezogener BPlan Nr. 3 Kletzin Solarpark Kletzin_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "614625be-ebbd-11ec-8385-83f85ce58d97",
+      "title": "Vorhabensbezogener BPlan Nr. 8 Bartow Solarpark Bartow Pfalz_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "1b7489cc-1744-11ef-8e75-9fb789b26122",
+      "title": "Vorhabensbezogener BPlan Hohenzieritz Solarpark Hohenzieritz_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "1763de06-c6dc-11ec-ac12-ab4c4b3c47c7",
+      "title": "Vorhabensbezogener BPlan Nr. 24 Penzlin, Stadt Solarpark Penzlin-Mollenstorf_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "139100a6-a854-11ed-931d-4393cd3b6dcc",
+      "title": "BPlan Nr. 2 Mölln Solarpark am alten Postweg_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "9d21e3c6-45ab-11ef-ae7c-93eb7891741e",
+      "title": "Vorhabensbezogener BPlan Nr. 12 Bentzin Vorhabenbezogener Bebauungsplan Nr. 12 Solarpark im Peenetal am Teufelsstein",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "9accdc36-380a-11f1-bc5e-3f76b8356d65",
+      "title": "FPlan Lewitzrand Änderung für den Bereich B-Plan Nr. 5 \"Solarpark Garwitz I\" Nr. 2",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "a1b20016-227d-11ef-a206-37735c4c5f32",
+      "title": "FPlan Ziegendorf Änderung \"Solarpark Drefahl\" OT Drefahl Nr. 10",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "50c719ca-2f07-11ef-91d7-571fada61230",
+      "title": "Vorhabensbezogener BPlan Nr. 7 Vellahn Solarfeld Rodenwalde",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "2c8213e0-7f72-11ec-8025-37cf9d8889b8",
+      "title": "Vorhabensbezogener BPlan Nr. 5 Lüttow-Valluhn \"Solarpark A 24\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "e0d33eda-a0bf-11ee-a441-3b0deca64ba0",
+      "title": "Vorhabensbezogener BPlan Nr. 12 Fincken Sondergebiet Solarenergie Rolandsberg Fincken_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3bfbaa84-c896-11ed-8935-43767e408953",
+      "title": "Vorhabensbezogener BPlan Möllenbeck Solarpark Warbende_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "0eb58608-b7b8-11eb-997f-af749be0c604",
+      "title": "BPlan Nr. 2 Werder Bebauungsplan Werder Solarpark Kölln West_PV Nr. 2",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "833f2b56-cb2d-11ee-ba7d-7f88175ff212",
+      "title": "Vorhabensbezogener BPlan Nr. 3 Karlsburg vorhabenbezogener B-Plan \"Solarpark Karlsburg\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "260c16f4-f166-11f0-b387-d35445ce3eee",
+      "title": "BPlan Nr. 2 Gehlsbach Solarpark Karbow Nord-West",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "82c6b81a-885b-11ea-a660-235f737d8905",
+      "title": "BPlan Nr. 4 Tützpatz Bebauungsplan Tützpatz Solarpark südwestlich von Tützpatz_PV Nr. 4",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "2dd28fa4-7246-11ee-8c16-cbedb9fcc5c9",
+      "title": "Vorhabensbezogener BPlan Nr. 25 Demmin, Hansestadt Solarpark Vorwerk Nord_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "be0ce4de-7894-11ea-abf2-8fdc954865c0",
+      "title": "Vorhabensbezogener BPlan Nr. 10 Fünfseen Solarpark Neu Grüssow",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "2725900a-02d0-11ef-9827-abfe0cf14639",
+      "title": "Vorhabensbezogener BPlan Nr. 12 Ziegendorf OT Meierstorf/Drefahl \"Solarpark Meierstorf Drefahl\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "b543f0b6-536d-11ed-a623-a35801c1579a",
+      "title": "FPlan Ahrenshagen-Daskow Solarpark Behrenshagen Nr. IV. Änderung",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "a503eb6e-74bf-11ea-9c9f-5b42f053db4c",
+      "title": "Vorhabensbezogener BPlan Nr. 19 Altentreptow, Stadt Vorhabenbezogener B-Plan Altentreptow, Stadt Solarpark Thalberg_PV Nr. 19",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "9fcc8dc8-474c-11ee-b134-63df94b8b425",
+      "title": "FPlan Ruhner Berge FPlan Ruhner Berge Solarpark Poltnitz II, 2. Änderung Nr. 0",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3239bbc0-78c2-11ea-83c6-9fde74379954",
+      "title": "Vorhabensbezogener BPlan Nr. 1 Kentzlin OT Alt Kentzlin Solarpark CS-MV_PV (kein Plandokument vorhanden)",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "7276611c-635a-11ee-aaa0-a7de986d7b07",
+      "title": "Vorhabensbezogener BPlan Nr. 26 Demmin, Hansestadt Wind- und Solarpark Vorwerk Süd_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "a034d0ee-c3fd-11ee-b207-7b36c25862f5",
+      "title": "Vorhabensbezogener BPlan Wokuhl-Dabelow Solarpark Wokuhl_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "f84644e8-c3fd-11ee-afe7-f7d3c976d892",
+      "title": "Vorhabensbezogener BPlan Wokuhl-Dabelow Solarpark Brückentin_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "84deb042-256c-11ee-9379-d3476927c807",
+      "title": "BPlan Nr. 2 Galenbeck Solarpark - Am alten Bahndamm_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "5de4023c-78c0-11ea-8277-ff7cc5d15c9b",
+      "title": "Vorhabensbezogener BPlan Nr. 4 Kargow Solarpark Kargow - Unterdorf_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "dce78a8e-f21a-11f0-8814-ff8f5030bdca",
+      "title": "BPlan Nr. 3 Gehlsbach Gehlsbach Solarpark Vietlübbe Ausbau Süd",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "7d98f06e-7131-11f0-a641-9f8266a7bb0f",
+      "title": "Vorhabensbezogener BPlan Nr. 8 Ruhner Berge Solarpark Drenkow",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "6d033a1a-8258-11f0-ab82-2bdb468750a7",
+      "title": "FPlan Spornitz Änderung \"Sondergebiet Solarpark Spornitz\" OT Spornitz Nr. 1",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "736d19f8-2277-11ef-9912-2393a2e540b7",
+      "title": "Vorhabensbezogener BPlan Nr. 13 Ziegendorf OT Drefahl \"Solarpark Drefahl\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "1da468fe-02cf-11ef-80ad-039ba532dbb5",
+      "title": "Vorhabensbezogener BPlan Nr. 11 Ziegendorf OT Meierstorf \"Solarpark Meierstorf Nord\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "9e7c0b74-b83f-11e9-8879-53e93d5f088c",
+      "title": "FPlan Pasewalk, Stadt Plangebiet 1 Solarfeld Altes Gaswerk Nr. 7. Änderung",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "bcd34edc-8460-11ea-8950-77ce998f1cf5",
+      "title": "BPlan Nr. 79 Waren (Müritz), Stadt Bürgersolaranlage Bahndreieck_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "55b2a654-45d0-11ef-8262-b71f8dfc4361",
+      "title": "Vorhabensbezogener BPlan Nr. 10 Süderholz OT Rakow Solarpark Bahnlinie Groß Rakow",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "1b1d5898-83b2-11ea-bfc4-8701a01c0682",
+      "title": "Vorhabensbezogener BPlan Nr. 3 Siedenbollentin Vorhabenbezogener B-Plan Siedenbollentin Solarpark Deponie Siedenbollentin_PV Nr. 3",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "d8729e38-aec1-11ee-a90f-a7efd11c9aaf",
+      "title": "Vorhabensbezogener BPlan Nr. 6 Gallin-Kuppentin Satzung der Gemeinde Gallin-Kuppentin über den vorhabenbezogenen BPlan Nr. 6 \"Solarpark Kuppentin\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "9b0277c0-9e41-11ee-857a-9f1a87c6dfa4",
+      "title": "BPlan Nr. 4 Karlsburg \"Solarpark Brüssow\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "acce6a96-4794-11f1-b715-87b47a647849",
+      "title": "BPlan Nr. 9 Dümmer Solarpark Kowahl",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "a8c9f644-7de1-11ec-9af3-73f8208f2d03",
+      "title": "BPlan Nr. 6 Kogel \"Solarpark Kogel\" der Gemeinde Kogel",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "d94a5538-cb51-11ee-9a45-1f09ab1e4285",
+      "title": "BPlan Nr. 2 Murchin Bebauungsplan \"Solarpark Lentschow\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "45ac8a28-173f-11ef-add2-b7e89c443f1f",
+      "title": "BPlan Nr. 5 Lewitzrand OT Garwitz \"Solarpark Garwitz I\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "06c6275a-02d2-11ef-b8ad-9f76d905e17c",
+      "title": "FPlan Ziegendorf Änderung \"Solarpark Meierstorf Drefahl\" OT Meierstorf Nr. 9",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "e93735ce-2254-11ea-96e4-f38a3466f85a",
+      "title": "Vorhabensbezogener BPlan Nr. 6 Bentzin OT Alt Plestlin Solarpark",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "c2de66b6-7d47-11ee-9e19-578516919c66",
+      "title": "Vorhabensbezogener BPlan Nr. 1 Werder Vorhabenbezogener B-Plan Werder Solarpark Heideholz_PV Nr. 1",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "13e1c3da-885c-11ea-99ea-2be6912d07b7",
+      "title": "BPlan Nr. 5 Tützpatz Vorhabenbezogener B-Plan Tützpatz Solarpark nördlich von Pripsleben_PV Nr. 5",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "b753a50a-ae41-11ef-8606-ab44c4def7ed",
+      "title": "BPlan Nr. 9 Spornitz OT Spornitz Sondergebiet \"Solarpark Spornitz Nord\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "de268436-1c99-11ed-ab8c-9fc59e6155bc",
+      "title": "Vorhabensbezogener BPlan Nr. 24 Demmin, Hansestadt PV-Anlagen - Quitzerower Weg_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "56d8641c-77e7-11ea-bc1a-f7091c74416c",
+      "title": "Vorhabensbezogener BPlan Nr. 05 Fincken PV-Anlage westlich der Autobahn A19_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "d1a1e97a-78be-11ea-8f11-1bc2d0444cce",
+      "title": "BPlan Nr. 2 Ivenack Energiepark Tentzerow_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "3ee815b6-78bc-11ea-9c1b-0b6655239942",
+      "title": "Vorhabensbezogener BPlan Nr. 2 Hohenmocker OT Tentzerow Energiepark_PV (kein Plandokument vorhanden)",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "90f64dac-78bf-11ea-9394-73dcdc597385",
+      "title": "Vorhabensbezogener BPlan Jabel Energiepark am Kieswerk Jabel_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "8dade6da-4388-11ef-b38d-4b8d758f9cfa",
+      "title": "FPlan Krakow am See, Stadt 9. Änderung (B-Plan Nr. 46 \"PV-Anlage Kieswerk Charlottenthal\") Nr. 0",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "e45f4064-b633-11ef-94d6-87579edb59fe",
+      "title": "BPlan Nr. 18 Kröslin \"Agri-PV-Park Karrin Hof westlich der L262\"",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "b5347900-13c8-11f1-9ba2-93293acbadfd",
+      "title": "BPlan Nr. 24 Jarmen, Stadt Agri-PV-Anlage bei Müssentin",
+      "warning": "detail page has no usable date, published_at left empty"
+    },
+    {
+      "id": "7d6215b8-9df3-11ec-b266-879cf09a726f",
+      "title": "BPlan Nr. 8, 3.Änderung Friedland, Stadt Gewerbepark Friedländer Stärke_PV",
+      "warning": "detail page has no usable date, published_at left empty"
+    }
+  ],
+  "deferred": 0,
+  "quality": {
+    "rows": 755,
+    "by_signal": {
+      "solar_acreage": 755
+    },
+    "without_published_at": 101,
+    "without_documents": 98,
+    "location_unresolved": 0
+  },
+  "requests": {
+    "network": 0,
+    "cache_hits": 786
+  },
+  "load": {
+    "inserted": 755,
+    "updated": 0,
+    "unchanged": 0,
+    "failed": []
+  }
+}

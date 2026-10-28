@@ -1,0 +1,74 @@
+== check: duplicate source ids (the unique key makes this impossible; it shows that it holds)
+ source | source_id | copies 
+--------+-----------+--------
+(0 rows)
+
+== check: points that are not in EPSG:25832
+ id | source_id | srid 
+----+-----------+------
+(0 rows)
+
+== check: geometry that is not a valid point
+ id | source_id | type 
+----+-----------+------
+(0 rows)
+
+== check: point and location status disagree
+ id | source_id | location_status | has_point 
+----+-----------+-----------------+-----------
+(0 rows)
+
+== check: points outside Mecklenburg-Vorpommern (box 10.5-14.5 E, 53.0-54.8 N)
+ id | source_id | title 
+----+-----------+-------
+(0 rows)
+
+== check: required fields missing (title, source link, matched terms)
+ id | source_id 
+----+-----------
+(0 rows)
+
+== check: rows that cannot be traced (hash, raw record)
+ id | source_id 
+----+-----------
+(0 rows)
+
+== check: timestamps out of order
+ id | source_id 
+----+-----------
+(0 rows)
+
+== info: rows per signal and location status
+  signal_type  | location_status | rows 
+---------------+-----------------+------
+ solar_acreage | resolved        |  755
+(1 row)
+
+== info: missing optional fields (the portal has no publication date: published_at is a stand-in)
+ rows | no_published_at | no_documents | no_municipality | no_point 
+------+-----------------+--------------+-----------------+----------
+  755 |             101 |           98 |               0 |        0
+(1 row)
+
+== info: which portal date stood in for the publication date
+                          basis                          | rows 
+---------------------------------------------------------+------
+ Auslegungsstartdatum                                    |  319
+ Inkrafttretensdatum                                     |  223
+ Aufstellungsbeschlußdatum                               |  111
+ (none)                                                  |  101
+ download: Aufstellungsbeschluss (16.06.2026) (Dokument) |    1
+(5 rows)
+
+== info: dates to review (before 2000 or more than a year ahead)
+              source_id               |                            title                             | published_at 
+--------------------------------------+--------------------------------------------------------------+--------------
+ 57925f68-433f-11e8-88d4-632a25a2715f | BPlan Nr. 71 Ribnitz-Damgarten, Bernsteinstadt OT Körkwitz P | 1989-12-31
+(1 row)
+
+== info: what the latest run did (rows seen again, changed, new)
+ inserted | updated | unchanged | not_seen_this_run 
+----------+---------+-----------+-------------------
+        0 |       0 |       755 |                 0
+(1 row)
+
