@@ -116,6 +116,28 @@ def test_unmatched_plans_are_grouped_by_their_weak_word():
     assert grouped["title"].iloc[0] == "FPlan Damshagen Teilplan Moor Nr. 0"  # runs of spaces collapsed
 
 
+def test_the_run_report_is_summarised_for_the_page():
+    report = {
+        "search_problems": [],
+        "detail_errors": [{"id": "1"}],
+        "rejected": [],
+        "warnings": [{"warning": "no date"}, {"warning": "no date"}, {"warning": "no point"}],
+        "load": {"inserted": 5, "updated": 1, "unchanged": 2, "failed": [{"id": "9"}]},
+    }
+    problems = plans.problem_counts(report).set_index("problem")["count"]
+    assert problems.to_dict() == {
+        "Search terms that failed": 0,
+        "Detail pages that failed": 1,
+        "Plans rejected for a bad location": 0,
+        "Rows the database refused": 1,
+    }
+    assert plans.warning_counts(report).set_index("warning")["plans"].to_dict() == {"no date": 2, "no point": 1}
+    assert plans.loaded_rows(report) == 8
+    dry_run = {key: value for key, value in report.items() if key != "load"}  # a report of a run that wrote nothing
+    assert plans.loaded_rows(dry_run) is None
+    assert plans.problem_counts(dry_run)["count"].sum() == 1  # only the failed detail page
+
+
 def test_the_run_report_prefers_the_last_run_and_falls_back_to_the_sample(tmp_path):
     assert plans.load_report(tmp_path) == (None, None)
     (tmp_path / "data" / "sample").mkdir(parents=True)

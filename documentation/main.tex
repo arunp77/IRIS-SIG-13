@@ -265,7 +265,7 @@ Of the 47 plans that matched no rule, 40 contain \code{Moor} as a place or field
 The 755 rows are mostly complete. Every row has a point, a municipality, a legal status and a plan type. 101 rows (13\,\%)
 have no date because the detail page has none, mostly plans in the draft stage. 98 rows (13\,\%) have no document links
 because the municipality has not uploaded any, and one row has no district. The date that stood in for the publication
-date was the start of the public display for 319 rows, the entry into force for 223, the council decision for 111 and a
+date was the start of the public display for 319 rows, the entry into force for 223, the council decision for 112 and a
 date in a download title for 1. By stage, 319 plans are in force, 427 are in procedure and 9 have ended. One plan has an
 entry-into-force date of 31 December 1989, which is implausible for a photovoltaic plan; it is stored as given.
 
@@ -281,7 +281,7 @@ the coast, where the simplified outline is not exact. None is further out.
 % ================================================================ 6
 \section{Testing and demonstration}\label{sec:tests}
 
-There are 111 automatic tests. HTTP is faked with real saved portal answers (9 search answers and 12 detail pages), so no
+There are 112 automatic tests. HTTP is faked with real saved portal answers (9 search answers and 12 detail pages), so no
 test needs the portal. 12 of the tests use PostGIS and run in their own database, so they never touch the rows of a real
 run. They cover paging, retries, empty and malformed answers, duplicates, impossible coordinates, and the behaviour of a
 re-run: a second load changes nothing, a changed plan is updated in place, and a failed detail page leaves the stored row

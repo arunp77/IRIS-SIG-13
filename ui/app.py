@@ -20,11 +20,14 @@ from plans import (
     filter_plans,
     load_plans,
     load_report,
+    loaded_rows,
     missing_fields,
     per_year,
+    problem_counts,
     signal_counts,
     stage_counts,
     unmatched_by_word,
+    warning_counts,
 )
 
 st.set_page_config(page_title="B-Plan portal MV", page_icon=":material/map:", layout="wide")
@@ -38,21 +41,6 @@ def plans_from_database(url):
 @st.cache_data
 def state_outline():
     return json.loads((ROOT / "data" / "reference" / "mv_outline.geojson").read_text(encoding="utf-8"))
-
-
-def bars(frame, label, description):
-    """Horizontal bars, largest first, with room for long labels (st.bar_chart cuts them off)."""
-    chart = (
-        alt.Chart(frame)
-        .mark_bar()
-        .encode(
-            x=alt.X("plans:Q", title=None),
-            y=alt.Y(f"{label}:N", sort="-x", title=None, axis=alt.Axis(labelLimit=320, labelOverlap=False)),
-            tooltip=[label, "plans"],
-        )
-        .properties(height=max(60, 26 * len(frame)))
-    )
-    st.altair_chart(chart, alt=description)
 
 
 STAGE_SCALE = alt.Scale(domain=list(STAGE_HEX), range=list(STAGE_HEX.values()))
@@ -86,7 +74,7 @@ def stage_bars(counts, description, height=None):
 def plain_bars(frame, label, description, height):
     """Horizontal bars in one colour with the number at the end of each bar."""
     labels = list(frame[label])
-    room = alt.Scale(domain=[0, frame["plans"].max() * 1.12], nice=False)
+    room = alt.Scale(domain=[0, max(frame["plans"].max(), 1) * 1.12], nice=False)
     axis = alt.Y(f"{label}:N", sort=labels, title=None, axis=alt.Axis(labelLimit=320, labelOverlap=False, ticks=False))
     base = alt.Chart(frame)
     bars_layer = base.mark_bar(color="#5b7c99").encode(
@@ -280,13 +268,23 @@ with table:
 
 with report_tab:
     report, report_file = load_report()
-    st.subheader("Signals")
-    signals = signal_counts(plans)
-    left, right = st.columns([2, 3])
-    with left:
-        bars(signals, "signal", "Plans loaded per signal type")
-    with right:
-        empty = [row.signal.replace("_", " ") for row in signals.itertuples() if row.plans == 0]
+    if report is None:
+        st.warning("Run `python tasks.py reproduce` to create out/full_run.json.", title="No run report found")
+        st.stop()
+    st.caption(f"Report of the last run: `{report_file}`")
+    loaded = loaded_rows(report)
+    with st.container(horizontal=True):
+        st.metric("Records seen", report["records_seen"], border=True, help="Search results, repeats included")
+        st.metric("Distinct candidates", report["candidates"], border=True)
+        st.metric("Loaded", "-" if loaded is None else loaded, border=True, help="Inserted, updated or unchanged")
+        st.metric("Not loaded", len(report["unmatched"]), border=True, help="Found by the search, no rule matched")
+
+    left, right = st.columns(2)
+    with left, st.container(border=True):
+        st.subheader("Signals")
+        signals = signal_counts(plans).assign(signal=lambda d: d["signal"].str.replace("_", " "))
+        plain_bars(signals, "signal", "Plans loaded per signal type", height=120)
+        empty = [row.signal for row in signals.itertuples() if row.plans == 0]
         if empty:
             st.info(
                 "No plans were loaded for this signal type, so there is nothing to show. "
@@ -295,40 +293,49 @@ with report_tab:
             )
         else:
             st.success("Every configured signal type has plans.")
-    if report is None:
-        st.warning("Run `python tasks.py reproduce` to create out/full_run.json.", title="No run report found")
-    else:
-        st.caption(f"Report: `{report_file}`")
-        with st.container(horizontal=True):
-            st.metric("Records seen", report["records_seen"], border=True)
-            st.metric("Distinct candidates", report["candidates"], border=True)
-            st.metric(
-                "Loaded",
-                report["load"]["inserted"] + report["load"]["updated"] + report["load"]["unchanged"],
-                border=True,
-            )
-            st.metric("Not matched", len(report["unmatched"]), border=True)
-            st.metric("Rejected (bad location)", len(report["rejected"]), border=True)
-            st.metric("Failed detail pages", len(report["detail_errors"]), border=True)
+    with right, st.container(border=True):
+        st.subheader("Problems in this run")
+        problems = problem_counts(report)
+        for row in problems.itertuples():
+            icon = ":green[:material/check_circle:]" if row.count == 0 else ":red[:material/error:]"
+            st.markdown(f"{icon} {row.problem}: **{row.count}**")
+        if problems["count"].sum() == 0:
+            st.success("Nothing went wrong. Nothing was rejected, skipped or refused.")
+        else:
+            st.error("Some plans were not loaded. The details are in the report file.")
+        for row in warning_counts(report).itertuples():
+            st.markdown(f":orange[:material/warning:] {row.plans} plans: {row.warning}")
+
+    with st.container(border=True):
         unmatched = unmatched_by_word(report)
-        st.subheader("Found by the search but not loaded")
+        st.subheader(f"Found by the search but not loaded ({len(unmatched)})")
         if unmatched.empty:
             st.success("Nothing was left out.")
         else:
-            st.dataframe(
-                unmatched.groupby("word").size().rename("plans").reset_index(),
-                hide_index=True,
-                alt="Unmatched plans per weak word",
+            st.caption(
+                "These plans contain a word of interest on its own, such as Moor or Umspannwerk, which usually means a "
+                "place name or an unrelated project. Pick words to filter the list."
             )
-            st.dataframe(
-                unmatched[["word", "title"]],
-                hide_index=True,
-                height=300,
-                alt="Titles of the plans that were not loaded",
-            )
+            words = list(unmatched["word"].value_counts().index)
+            chosen = st.pills("Word", words, selection_mode="multi", default=words)
+            left, right = st.columns([2, 3])
+            with left:
+                by_word = unmatched["word"].value_counts().rename_axis("word").reset_index(name="plans")
+                plain_bars(by_word, "word", "Number of plans left out per word", height=max(80, 30 * len(by_word)))
+            with right:
+                st.dataframe(
+                    unmatched[unmatched["word"].isin(chosen or [])][["word", "title"]],
+                    hide_index=True,
+                    height=260,
+                    column_config={
+                        "word": st.column_config.TextColumn("Word", width="small"),
+                        "title": st.column_config.TextColumn("Title", width="large"),
+                    },
+                    alt="Titles of the plans that were found but not loaded",
+                )
+
+    with st.container(border=True):
         st.subheader("Missing fields in the shown plans")
-        bars(
-            missing_fields(shown).rename(columns={"field": "missing"}),
-            "missing",
-            "Number of shown plans lacking each optional field",
-        )
+        missing = missing_fields(shown).rename(columns={"field": "missing"}).sort_values("plans", ascending=False)
+        plain_bars(missing, "missing", "Number of shown plans lacking each optional field", height=120)
+        st.caption("Counts for the plans currently shown, so the filters in the sidebar apply.")

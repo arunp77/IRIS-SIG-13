@@ -9,7 +9,7 @@
 - **Live check of this code, 28 October 2026.** `--signal grid_landing --signal peatland_restoration --dry-run` against the
   live portal with an empty cache: 10 requests in 19 seconds (the pause is kept), 52 records returned, none matching a
   rule; every answer was written to `data/raw/`.
-- **Tests and demo:** 111 tests, and the offline demo on saved real answers (`python tasks.py test`, `python tasks.py demo`).
+- **Tests and demo:** 112 tests, and the offline demo on saved real answers (`python tasks.py test`, `python tasks.py demo`).
 
 ## Result
 
@@ -40,7 +40,7 @@ point or a peatland restoration plan, so **grid landing: 0 and peatland restorat
 | district | 1 | one plan has an empty "responsible authority" block |
 
 Which portal date stood in for the publication date: start of public display 319 rows, entry into force 223, council
-decision 111, a date in a download title 1, none 101. One plan has an entry-into-force date of 31 December 1989, which is
+decision 112, a date in a download title 1, none 101. One plan has an entry-into-force date of 31 December 1989, which is
 implausible for a photovoltaic plan; it is stored as given and listed by the validation query "dates to review".
 Plans by stage: in force 319, in procedure 427, ended 9.
 

@@ -145,6 +145,30 @@ def load_report(folder=ROOT):
     return None, None
 
 
+def loaded_rows(report):
+    """Rows the run wrote or found unchanged, or None for a report of a dry run."""
+    load = report.get("load")
+    return None if load is None else load["inserted"] + load["updated"] + load["unchanged"]
+
+
+def problem_counts(report):
+    """What went wrong in the run, as (problem, count) rows. All counts zero means a clean run."""
+    failed_rows = (report.get("load") or {}).get("failed", [])
+    items = [
+        ("Search terms that failed", report["search_problems"]),
+        ("Detail pages that failed", report["detail_errors"]),
+        ("Plans rejected for a bad location", report["rejected"]),
+        ("Rows the database refused", failed_rows),
+    ]
+    return pd.DataFrame({"problem": [name for name, _ in items], "count": [len(found) for _, found in items]})
+
+
+def warning_counts(report):
+    """Incomplete records of the run, grouped by the kind of warning."""
+    kinds = pd.Series([w["warning"] for w in report["warnings"]], dtype="object").value_counts()
+    return pd.DataFrame({"warning": list(kinds.index), "plans": kinds.to_numpy()})
+
+
 def unmatched_by_word(report):
     """Plans the search found but the classifier left out, grouped by the weak word in the title."""
     rows = []
