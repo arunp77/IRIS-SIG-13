@@ -1,0 +1,4 @@
+# same line endings everywhere, so checksums and fixtures are identical on Windows and Linux
+* text=auto eol=lf
+*.gz binary
+*.png binary

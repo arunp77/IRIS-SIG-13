@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iris-sig-13-harvester"
+version = "0.1.0"
+description = "Harvester for Mecklenburg-Vorpommern planning records (IRIS-SIG-13)"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "psycopg[binary]>=3.1",
+    "pyproj>=3.6",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+# export and quick-look map (qa/)
+qa = ["numpy>=1.26", "shapely>=2.0", "matplotlib>=3.8"]
+# dashboard (ui/): streamlit brings pandas and pydeck along
+ui = ["streamlit>=1.50"]
+# tests and style checks
+test = ["pytest>=8.0", "responses>=0.25", "ruff>=0.4"]
+
+[project.scripts]
+harvest = "harvester.run:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["db: needs the PostGIS container (docker compose up -d)"]
+
+[tool.ruff]
+line-length = 120
+src = ["src", "."]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
