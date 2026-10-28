@@ -9,24 +9,6 @@ the harvester drops or finds incomplete is listed with the reason.
 and no peatland plans (the portal has none, see [Known limitations](#known-limitations)). A second run changed nothing:
 `0 inserted, 0 updated, 755 unchanged`.
 
-## Quick start
-
-You need Python 3.11 or newer and Docker. Nothing else has to be configured: the database is created locally by
-Docker, `.env.example` holds working defaults, and the portal data of the full run is included.
-
-```bash
-git clone https://github.com/arunp77/IRIS-SIG-13.git && cd IRIS-SIG-13
-python tasks.py setup       # environment, database and raw data (the first time takes a few minutes)
-python tasks.py demo        # the whole pipeline on a small saved sample, run twice
-python tasks.py test        # 109 tests
-python tasks.py reproduce   # the full run of 755 plans from saved data, then again: nothing changes
-python tasks.py validate    # the validation queries: every check returns 0 rows
-python tasks.py ui          # dashboard with map and charts (http://localhost:8501)
-```
-
-No command needs the portal, a login or a credential. On Windows use `py -3.12 tasks.py ...` if `python` is not on the
-PATH; on Linux and macOS `make setup`, `make demo`, ... do the same. If something does not work, see
-[Troubleshooting](#troubleshooting).
 
 ## Contents
 
@@ -44,6 +26,26 @@ New here? Read the Quick start, then follow [Usage](#usage) step by step.
 10. [Project layout](#project-layout)
 11. [Known limitations](#known-limitations)
 12. [Development progress](#development-progress)
+
+## Quick start
+
+You need Python 3.11 or newer and Docker. Nothing else has to be configured: the database is created locally by
+Docker, `.env.example` holds working defaults, and the portal data of the full run is included.
+
+```bash
+git clone https://github.com/arunp77/IRIS-SIG-13.git && cd IRIS-SIG-13
+python tasks.py setup       # environment, database and raw data (the first time takes a few minutes)
+python tasks.py demo        # the whole pipeline on a small saved sample, run twice
+python tasks.py test        # 109 tests
+python tasks.py reproduce   # the full run of 755 plans from saved data, then again: nothing changes
+python tasks.py validate    # the validation queries: every check returns 0 rows
+python tasks.py ui          # dashboard with map and charts (http://localhost:8501)
+```
+
+No command needs the portal, a login or a credential. If `python` is not found, use `python3` (Linux, macOS) or `py -3.12` (Windows). On Linux and macOS `make setup`,
+`make demo`, ... do the same. If something does not work, see
+[Troubleshooting](#troubleshooting).
+
 
 ## Overview
 
@@ -263,6 +265,9 @@ is updated in place; the tests prove this with a changed fixture (`tests/test_lo
 
 ### 7. See errors and missing fields
 
+The commands in this step use the tools in the virtual environment, so activate it first: `source .venv/bin/activate`
+(on Windows `.venv\Scripts\activate`).
+
 Nothing is dropped silently. The report (`out/full_run.json`) has one list per kind of problem:
 
 | Key | Content |
@@ -298,9 +303,6 @@ Exit codes: `0` clean, `2` finished but something failed that a re-run may fix, 
 
 Filtering by signal: `harvest --offline --dry-run --signal grid_landing` finds 5 candidates and keeps 0, which shows
 that the portal has nothing for this signal that the rules accept (see [Known limitations](#known-limitations)).
-
-(The `harvest` command is in the virtual environment: activate it first with `source .venv/bin/activate`, on Windows
-`.venv\Scripts\activate`.)
 
 ### 8. See the map and the charts
 
@@ -355,6 +357,9 @@ cache and the upsert. `--offline` answers only from the cache and never contacts
 | Symptom | Cause and fix |
 |---------|---------------|
 | `Python 3.11 or newer is needed` | Start the setup with a newer interpreter: `python3.12 tasks.py setup` or `py -3.12 tasks.py setup`. With pyenv: `pyenv install 3.12 && pyenv local 3.12` |
+| `python: command not found` | Use `python3 tasks.py ...` (on Windows `py -3.12 tasks.py ...`) |
+| `ensurepip is not available` | The Python `venv` module is a separate package on Debian and Ubuntu: `sudo apt install python3-venv`, then run the setup again |
+| `permission denied` for the Docker socket | Your user is not in the `docker` group: `sudo usermod -aG docker $USER`, log out and in again |
 | `Docker was not found` / `Cannot connect to the Docker daemon` | Install and start Docker (Desktop on Windows and macOS), or use your own PostGIS ([Without Docker](#without-docker)) |
 | `port 5434 is in use; the database will use port 5435` | Informational: the next free port was written to `.env` |
 | `no virtual environment yet` or `no .env yet` | Run `python tasks.py setup` first |
