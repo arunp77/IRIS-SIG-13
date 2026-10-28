@@ -1,0 +1,10 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+# no e-mail prompt in the terminal on the first start
+showEmailPrompt = false
+
+[theme]
+# always light, whatever the system or browser theme is
+base = "light"
