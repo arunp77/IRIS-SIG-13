@@ -440,26 +440,51 @@ Style: `ruff check .` and `ruff format --check .` pass.
 ## Project layout
 
 ```
-tasks.py, Makefile        the commands of this README
-pyproject.toml            what the program needs; the `harvest` command; test and style settings
-requirements.lock         every dependency pinned to an exact version
-.env.example              settings for a local run (copy to .env, never committed)
-docker-compose.yml        local PostgreSQL 16 / PostGIS 3.4
-config/signals.yaml       search terms and the rules that decide the signal type
-sql/                      01_schema.sql (the table), 02_validation.sql (the checks)
-src/harvester/            client.py (polite HTTP, retries, cache, offline mode)
-                          source.py (search paging, detail page parsing)
-                          transform.py (classify, locate, choose the date, build the row)
-                          load.py (upsert)    run.py (one run, the report, the command line)
-                          raw.py (pack, unpack and verify the raw answers)
-tests/                    112 tests; fixtures/portal/ holds real saved portal answers
-data/raw/                 the raw portal answers: archive + MANIFEST.csv (the unpacked JSON is not committed)
-data/reference/           outline of MV for the map and the point check (Natural Earth, public domain)
-data/sample/              sample output of the full run: report, validation output, 25 rows as CSV and GeoJSON
-scripts/                  the offline demo
-qa/                       GeoJSON and CSV export, quick-look map
-ui/                       the Streamlit dashboard (app.py) and its data functions (plans.py)
-docs/                     source_notes.md, data_dictionary.md, quality_report.md, figures/
+.
+├── README.md
+├── LICENSE
+├── tasks.py                      the commands of this README (Linux, macOS, Windows)
+├── Makefile                      optional shortcut for Linux and macOS
+├── pyproject.toml                what the program needs; the `harvest` command; test and style settings
+├── requirements.lock             every dependency pinned to an exact version
+├── environment.yml               the same for conda users
+├── docker-compose.yml            local PostgreSQL 16 / PostGIS 3.4
+├── .env.example                  settings for a local run (copy to .env, never committed)
+├── .streamlit/
+│   └── config.toml               dashboard settings (light theme)
+├── config/
+│   └── signals.yaml              search terms and the rules that decide the signal type
+├── sql/
+│   ├── 01_schema.sql             the table iris_staging.signal_ingest
+│   └── 02_validation.sql         8 checks and 6 information queries
+├── src/harvester/
+│   ├── client.py                 polite HTTP: retries, pauses, disk cache, offline mode
+│   ├── source.py                 search paging, detail page parsing
+│   ├── transform.py              classify, locate, choose the date, build the row
+│   ├── load.py                   upsert into PostGIS
+│   ├── run.py                    one run, the report, the `harvest` command
+│   └── raw.py                    pack, unpack and verify the raw portal answers
+├── tests/                        112 tests
+│   ├── conftest.py, helpers.py   database fixtures, the fake portal
+│   ├── test_*.py                 7 modules: client, source, transform, load, run, raw, ui
+│   └── fixtures/portal/          real saved portal answers (9 searches, 12 detail pages)
+├── data/
+│   ├── raw/                      portal answers of the full run: archive + MANIFEST.csv
+│   ├── reference/                outline of MV (Natural Earth, public domain)
+│   └── sample/                   sample output: report, validation output, 25 rows as CSV and GeoJSON
+├── scripts/
+│   └── demo_offline.py           the offline demo
+├── qa/
+│   └── quicklook.py              GeoJSON and CSV export, quick-look map
+├── ui/
+│   ├── app.py                    the Streamlit dashboard
+│   └── plans.py                  its data functions
+├── docs/
+│   ├── source_notes.md           what I found at the source
+│   ├── data_dictionary.md        every column of the table
+│   ├── quality_report.md         results, errors and open questions
+│   └── figures/                  map and dashboard screenshots
+└── documentation/                technical document (LaTeX source and PDF)
 ```
 
 ## Known limitations
