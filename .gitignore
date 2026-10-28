@@ -10,3 +10,13 @@ data/raw/*.json
 # generated
 out/
 *.egg-info/
+
+# LaTeX build output of documentation/ (the finished PDF is committed)
+documentation/build/
+documentation/main.pdf
+documentation/*.aux
+documentation/*.log
+documentation/*.out
+documentation/*.synctex.gz
+documentation/*.fls
+documentation/*.fdb_latexmk

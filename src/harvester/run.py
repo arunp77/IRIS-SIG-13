@@ -131,8 +131,11 @@ def main(argv=None):
     if args.init_db:
         if not db_url:
             return _fail("DATABASE_URL is not set")
-        with psycopg.connect(db_url) as conn:
-            conn.execute((ROOT / "sql" / "01_schema.sql").read_text(encoding="utf-8"))
+        try:
+            with psycopg.connect(db_url) as conn:
+                conn.execute((ROOT / "sql" / "01_schema.sql").read_text(encoding="utf-8"))
+        except psycopg.Error as exc:
+            return _database_unreachable(exc)
         print("schema and table are ready")
         return 0
     if not args.offline and (not contact or contact.lower() == PLACEHOLDER_CONTACT):
@@ -143,6 +146,11 @@ def main(argv=None):
     rules = transform.load_rules(ROOT / "config" / "signals.yaml")
     if args.signal and set(args.signal) - set(rules):
         return _fail(f"unknown signal, choose from {', '.join(rules)}")
+    if not args.dry_run:  # fail now, not after a harvest of half an hour
+        try:
+            psycopg.connect(db_url).close()
+        except psycopg.Error as exc:
+            return _database_unreachable(exc)
     client = Client(
         contact or "offline",
         cache_dir=args.cache_dir,
@@ -161,6 +169,11 @@ def main(argv=None):
         args.report.write_text(json.dumps(report, indent=2, ensure_ascii=False, default=str) + "\n", encoding="utf-8")
     failed = report["search_problems"] or report["detail_errors"] or (report.get("load") or {}).get("failed")
     return 2 if failed else 0
+
+
+def _database_unreachable(exc):
+    detail = str(exc).strip().splitlines()[0] if str(exc).strip() else type(exc).__name__
+    return _fail(f"cannot use the database: {detail}. Is it running? Start it with 'python tasks.py setup'.")
 
 
 def _fail(message):

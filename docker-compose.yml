@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-iris}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
     ports:
-      - "${POSTGRES_PORT:-5434}:5432"
+      - "127.0.0.1:${POSTGRES_PORT:-5434}:5432"  # this machine only; the password is a throwaway
     volumes:
       - sig13_pgdata:/var/lib/postgresql/data
     healthcheck:

@@ -102,6 +102,13 @@ def test_the_placeholder_contact_address_is_refused(monkeypatch, capsys):
     assert "HARVESTER_CONTACT" in capsys.readouterr().err
 
 
+@pytest.mark.parametrize("arguments", [["--offline"], ["--init-db"]])
+def test_an_unreachable_database_is_a_message_not_a_traceback(monkeypatch, capsys, arguments):
+    monkeypatch.setenv("DATABASE_URL", "postgresql://nobody:x@localhost:1/none?connect_timeout=2")
+    assert run.main(arguments) == 1
+    assert "cannot use the database" in capsys.readouterr().err
+
+
 @responses.activate
 def test_exit_code_2_when_something_failed(monkeypatch, tmp_path):
     serve_portal(missing_details={"cf1b05c0-2732-11ef-87bb-47c1e8e0114e"})
