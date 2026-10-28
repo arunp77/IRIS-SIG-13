@@ -127,8 +127,8 @@ Nothing is deleted: a plan that disappears from the portal stays in the table an
 | Free ports 5434 (database) and 8501 (dashboard) | | a busy database port is replaced automatically |
 | `make` | nothing | optional shortcut on Linux and macOS; `tasks.py` does the same everywhere |
 
-Linux was used for development and testing. The Windows-specific parts (paths, UTF-8, no shell commands) were written
-for it, but I have not run it on Windows or macOS.
+Developed and tested on Ubuntu 26.04 LTS with Docker 29.1 (Compose v2) and Python 3.11, 3.12 and 3.13. The
+Windows-specific parts (paths, UTF-8, no shell commands) were written for it, but I have not run it on Windows or macOS.
 
 ## Setup
 
@@ -501,6 +501,6 @@ Style: `ruff check .` and `ruff format --check .` pass.
 - The portal offers no "changed since" filter, so every run is a full refresh.
 - A cold live run takes half an hour or more by design.
 - The ingestion is a JSON search plus HTML detail pages, not a pure HTML scrape: the HTML listing pages of the portal are empty shells.
-- Tested on Linux only (see [Requirements](#requirements)).
+- Tested on Ubuntu Linux only (see [Requirements](#requirements)).
 
 ---
