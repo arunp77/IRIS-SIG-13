@@ -36,7 +36,7 @@ Docker, `.env.example` holds working defaults, and the portal data of the full r
 git clone https://github.com/arunp77/IRIS-SIG-13.git && cd IRIS-SIG-13
 python tasks.py setup       # environment, database and raw data (the first time takes a few minutes)
 python tasks.py demo        # the whole pipeline on a small saved sample, run twice
-python tasks.py test        # 109 tests
+python tasks.py test        # 111 tests
 python tasks.py reproduce   # the full run of 755 plans from saved data, then again: nothing changes
 python tasks.py validate    # the validation queries: every check returns 0 rows
 python tasks.py ui          # dashboard with map and charts (http://localhost:8501)
@@ -81,7 +81,7 @@ Capture Baltic energy grid landing points, solar acreage and peatland restoratio
 | Signal type and geographic/domain filtering match the objective | Three signal types with word rules in `config/signals.yaml`; every point is checked against MV; all 755 points lie inside the state outline or within 3 km of it | `python tasks.py qa`, `python tasks.py ui` |
 | Valid, traceable records, no duplicates on re-run | Unique `(source, source_id)`; every row keeps its `source_url`, a content hash and the raw record; a second run reports `755 unchanged` | `python tasks.py reproduce`, `python tasks.py validate` |
 | Errors and missing fields are visible; invalid coordinates are not silently accepted | The run report lists every plan that was left out, skipped, rejected or incomplete, with the reason; a wrong centroid rejects the record | [Usage, step 7](#7-see-errors-and-missing-fields) |
-| Maintainable, configurable, demonstrable without production access | Rules in YAML, settings in `.env`, 109 tests, the full run replays offline from saved portal answers | `python tasks.py demo`, `python tasks.py test` |
+| Maintainable, configurable, demonstrable without production access | Rules in YAML, settings in `.env`, 111 tests, the full run replays offline from saved portal answers | `python tasks.py demo`, `python tasks.py test` |
 
 ### Pipeline
 
@@ -171,7 +171,7 @@ python -m harvester.raw unpack
 psql "$DATABASE_URL" -f sql/02_validation.sql            # instead of `tasks.py validate`
 ```
 
-Without any database, `pytest -m "not db"` (97 tests) and `harvest --offline --dry-run` still work.
+Without any database, `pytest -m "not db"` (99 tests) and `harvest --offline --dry-run` still work.
 
 ## Usage
 
@@ -202,7 +202,7 @@ Five of the 17 candidates matched no signal and are listed in `out/demo_report.j
 python tasks.py test
 ```
 
-`109 passed` in a few seconds. See [Tests](#tests) for what they cover.
+`111 passed` in a few seconds. See [Tests](#tests) for what they cover.
 
 ### 3. Run the validation queries
 
@@ -317,7 +317,7 @@ filters for title, district and stage that apply to all of them:
 | Tab | Content |
 |-----|---------|
 | Map | the points over the MV outline, coloured by stage; hover a point for the plan |
-| Charts | plans per district, per stage, per year, and which portal date stood in for the publication date |
+| Charts | plans per year (every year shown, also those without plans), per district, largest municipalities, legal status, kind of plan, and which portal date stood in for the publication date; bars are split by stage in the colours of the map |
 | Plans | a table with a link to the portal page of every plan, and a CSV download |
 | Run report | the signals with their plan counts, and the plans that were left out, with the reason |
 
@@ -419,7 +419,7 @@ Every column is described in [docs/data_dictionary.md](docs/data_dictionary.md).
 
 ## Tests
 
-`python tasks.py test` runs 109 tests in about 5 seconds. HTTP is faked with the `responses` library and with real saved
+`python tasks.py test` runs 111 tests in about 5 seconds. HTTP is faked with the `responses` library and with real saved
 portal answers, so no test needs the portal. The 12 database tests (10 for the loader, 2 for the dashboard page) run in
 their own database (`iris_test`, created on first use) and never touch the rows of a real run.
 
@@ -452,7 +452,7 @@ src/harvester/            client.py (polite HTTP, retries, cache, offline mode)
                           transform.py (classify, locate, choose the date, build the row)
                           load.py (upsert)    run.py (one run, the report, the command line)
                           raw.py (pack, unpack and verify the raw answers)
-tests/                    109 tests; fixtures/portal/ holds real saved portal answers
+tests/                    111 tests; fixtures/portal/ holds real saved portal answers
 data/raw/                 the raw portal answers: archive + MANIFEST.csv (the unpacked JSON is not committed)
 data/reference/           outline of MV for the map and the point check (Natural Earth, public domain)
 data/sample/              sample output of the full run: report, validation output, 25 rows as CSV and GeoJSON

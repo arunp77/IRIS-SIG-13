@@ -19,6 +19,9 @@ IN_FORCE = {"In Kraft getreten", "Wirksamkeit"}
 ENDED = {"Ausser Kraft", "Untergegangen", "Teilweise Untergegangen", "Aufgehoben"}
 STAGES = ["In force", "In procedure", "Ended"]
 STAGE_COLOURS = {"In force": [46, 160, 90], "In procedure": [235, 150, 30], "Ended": [130, 130, 145]}
+STAGE_HEX = {
+    stage: "#%02x%02x%02x" % tuple(rgb) for stage, rgb in STAGE_COLOURS.items()
+}  # the same colours for the charts
 
 # Words that make a plan "unmatched": the classifier only accepts them together with a second word.
 WEAK_WORDS = ["Moor", "Umspannwerk", "Offshore"]
@@ -95,6 +98,43 @@ def signal_counts(frame):
     """Plans per configured signal type, with zeros for the types the portal had nothing for."""
     counts = frame["signal_type"].value_counts().reindex(SIGNALS, fill_value=0)
     return pd.DataFrame({"signal": counts.index, "plans": counts.to_numpy()})
+
+
+def stage_counts(frame, column, top=None):
+    """Plans per value of `column` and stage, as rows of (label, stage, plans, total), largest total first.
+
+    Missing values are counted under "(none)". `top` keeps only that many labels.
+    """
+    counts = (
+        frame.assign(label=frame[column].fillna("(none)"))
+        .groupby(["label", "stage"])
+        .size()
+        .rename("plans")
+        .reset_index()
+    )
+    counts["total"] = counts.groupby("label")["plans"].transform("sum")
+    counts = counts.sort_values(["total", "label", "stage"], ascending=[False, True, True])
+    if top:
+        counts = counts[counts["label"].isin(counts["label"].drop_duplicates().head(top))]
+    return counts.reset_index(drop=True)
+
+
+def per_year(frame):
+    """Plans per year of the stand-in date and stage, with every year from the first to the last (zeros included).
+
+    Rows are (year, stage, plans); the year is text so that charts treat it as a label.
+    Plans without a date are left out.
+    """
+    dated = frame.dropna(subset=["year"])
+    if dated.empty:
+        return pd.DataFrame(columns=["year", "stage", "plans"])
+    years = range(int(dated["year"].min()), int(dated["year"].max()) + 1)
+    table = dated.groupby(["year", "stage"]).size().unstack(fill_value=0)
+    table = table.reindex(index=years, columns=STAGES, fill_value=0)
+    long = table.stack().rename("plans").reset_index()
+    long.columns = ["year", "stage", "plans"]
+    long["year"] = long["year"].astype(int).astype(str)
+    return long
 
 
 def load_report(folder=ROOT):

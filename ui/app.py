@@ -14,13 +14,16 @@ import pydeck
 import streamlit as st
 from plans import (
     ROOT,
+    STAGE_HEX,
     STAGES,
     database_url,
     filter_plans,
     load_plans,
     load_report,
     missing_fields,
+    per_year,
     signal_counts,
+    stage_counts,
     unmatched_by_word,
 )
 
@@ -50,6 +53,49 @@ def bars(frame, label, description):
         .properties(height=max(60, 26 * len(frame)))
     )
     st.altair_chart(chart, alt=description)
+
+
+STAGE_SCALE = alt.Scale(domain=list(STAGE_HEX), range=list(STAGE_HEX.values()))
+STAGE_COLOUR = alt.Color("stage:N", scale=STAGE_SCALE, legend=None)
+STAGE_COLOUR_WITH_LEGEND = alt.Color("stage:N", scale=STAGE_SCALE, legend=alt.Legend(orient="top", title=None))
+
+
+def stage_bars(counts, description, height=None):
+    """Horizontal bars per label, split by stage in the colours of the map, with the total at the end of each bar."""
+    labels = list(counts["label"].drop_duplicates())
+    room = alt.Scale(domain=[0, counts["total"].max() * 1.12], nice=False)  # space for the number after the longest bar
+    axis = alt.Y("label:N", sort=labels, title=None, axis=alt.Axis(labelLimit=320, labelOverlap=False, ticks=False))
+    bars_layer = (
+        alt.Chart(counts)
+        .mark_bar()
+        .encode(
+            x=alt.X("plans:Q", title=None, axis=alt.Axis(grid=True, tickMinStep=1), scale=room),
+            y=axis,
+            color=STAGE_COLOUR,
+            tooltip=[alt.Tooltip("label:N", title="Label"), "stage", "plans"],
+        )
+    )
+    totals = (
+        alt.Chart(counts.drop_duplicates("label"))
+        .mark_text(align="left", dx=4, fontSize=11)
+        .encode(x=alt.X("total:Q", scale=room), y=axis, text="total:Q")
+    )
+    st.altair_chart((bars_layer + totals).properties(height=height or max(80, 28 * len(labels))), alt=description)
+
+
+def plain_bars(frame, label, description, height):
+    """Horizontal bars in one colour with the number at the end of each bar."""
+    labels = list(frame[label])
+    room = alt.Scale(domain=[0, frame["plans"].max() * 1.12], nice=False)
+    axis = alt.Y(f"{label}:N", sort=labels, title=None, axis=alt.Axis(labelLimit=320, labelOverlap=False, ticks=False))
+    base = alt.Chart(frame)
+    bars_layer = base.mark_bar(color="#5b7c99").encode(
+        x=alt.X("plans:Q", title=None, axis=alt.Axis(tickMinStep=1), scale=room), y=axis, tooltip=[label, "plans"]
+    )
+    numbers = base.mark_text(align="left", dx=4, fontSize=11).encode(
+        x=alt.X("plans:Q", scale=room), y=axis, text="plans:Q"
+    )
+    st.altair_chart((bars_layer + numbers).properties(height=height), alt=description)
 
 
 st.title("Planning portal Mecklenburg-Vorpommern")
@@ -152,29 +198,50 @@ with map_tab:
         )
 
 with charts_tab:
-    left, right = st.columns(2)
-    with left, st.container(border=True):
-        st.subheader("Plans per district")
-        by_district = (
-            shown["district"].fillna("(none)").value_counts().rename_axis("district").reset_index(name="plans")
+    with st.container(border=True):
+        st.subheader("Plans per year")
+        yearly = per_year(shown)
+        if yearly.empty:
+            st.info("None of the shown plans has a date.")
+        else:
+            timeline = (
+                alt.Chart(yearly)
+                .mark_bar()
+                .encode(
+                    x=alt.X("year:O", title=None, axis=alt.Axis(labelAngle=0, labelOverlap="greedy")),
+                    y=alt.Y("plans:Q", title=None, axis=alt.Axis(tickMinStep=1)),
+                    color=STAGE_COLOUR_WITH_LEGEND,
+                    order=alt.Order("stage:N", sort="descending"),
+                    tooltip=["year", "stage", "plans"],
+                )
+                .properties(height=260)
+            )
+            st.altair_chart(timeline, alt="Number of plans per year of the stand-in date, split by stage")
+        st.caption(
+            "The portal has no publication date: the year is that of the first date on the plan's detail page "
+            "(see the date chart below). Years without plans are shown as empty. The current year is not complete."
         )
-        bars(by_district, "district", "Number of plans per district")
-    with right, st.container(border=True):
-        st.subheader("Plans per stage")
-        by_stage = shown["legal_status"].fillna("(none)").value_counts().rename_axis("status").reset_index(name="plans")
-        bars(by_stage, "status", "Number of plans per legal status")
 
     left, right = st.columns(2)
     with left, st.container(border=True):
-        st.subheader("Plans per year (stand-in date)")
-        by_year = shown.dropna(subset=["year"]).groupby("year").size().rename("plans").reset_index()
-        by_year["year"] = by_year["year"].astype(int).astype(str)
-        st.bar_chart(by_year, x="year", y="plans", alt="Number of plans per year of the stand-in publication date")
-        st.caption("The portal has no publication date. The year comes from the first date the detail page has.")
+        st.subheader("Plans per district")
+        stage_bars(stage_counts(shown, "district"), "Number of plans per district, split by stage")
     with right, st.container(border=True):
-        st.subheader("Which date stood in for the publication date")
-        by_basis = shown["date_basis"].value_counts().rename_axis("basis").reset_index(name="plans")
-        bars(by_basis, "basis", "Number of plans per date basis")
+        st.subheader("Largest municipalities")
+        stage_bars(stage_counts(shown, "municipality", top=10), "Municipalities with the most plans, split by stage")
+
+    left, right = st.columns(2)
+    with left, st.container(border=True):
+        st.subheader("Legal status")
+        stage_bars(stage_counts(shown, "legal_status"), "Number of plans per legal status, coloured by stage")
+    with right:
+        with st.container(border=True):
+            st.subheader("Kind of plan")
+            stage_bars(stage_counts(shown, "plan_type"), "Number of plans per kind of plan, split by stage")
+        with st.container(border=True):
+            st.subheader("Date used as publication date")
+            by_basis = shown["date_basis"].value_counts().rename_axis("basis").reset_index(name="plans")
+            plain_bars(by_basis, "basis", "Number of plans per date basis", height=max(80, 28 * len(by_basis)))
 
 with table:
     st.dataframe(

@@ -9,7 +9,7 @@
 - **Live check of this code, 28 October 2026.** `--signal grid_landing --signal peatland_restoration --dry-run` against the
   live portal with an empty cache: 10 requests in 19 seconds (the pause is kept), 52 records returned, none matching a
   rule; every answer was written to `data/raw/`.
-- **Tests and demo:** 109 tests, and the offline demo on saved real answers (`python tasks.py test`, `python tasks.py demo`).
+- **Tests and demo:** 111 tests, and the offline demo on saved real answers (`python tasks.py test`, `python tasks.py demo`).
 
 ## Result
 

@@ -281,7 +281,7 @@ the coast, where the simplified outline is not exact. None is further out.
 % ================================================================ 6
 \section{Testing and demonstration}\label{sec:tests}
 
-There are 109 automatic tests. HTTP is faked with real saved portal answers (9 search answers and 12 detail pages), so no
+There are 111 automatic tests. HTTP is faked with real saved portal answers (9 search answers and 12 detail pages), so no
 test needs the portal. 12 of the tests use PostGIS and run in their own database, so they never touch the rows of a real
 run. They cover paging, retries, empty and malformed answers, duplicates, impossible coordinates, and the behaviour of a
 re-run: a second load changes nothing, a changed plan is updated in place, and a failed detail page leaves the stored row

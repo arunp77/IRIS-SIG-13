@@ -71,6 +71,33 @@ def test_missing_fields_are_counted():
     assert counts.to_dict() == {"publication date": 1, "documents": 1, "district": 1, "location": 1}
 
 
+def test_the_year_chart_has_every_year_between_the_first_and_the_last():
+    shown = frame(
+        {"published_at": datetime(2020, 5, 1, 10, tzinfo=timezone.utc)},
+        {"published_at": datetime(2023, 5, 1, 10, tzinfo=timezone.utc), "legal_status": "Entwurf"},
+        {"published_at": None},  # no date: left out
+    )
+    years = plans.per_year(shown)
+    assert sorted(set(years["year"])) == ["2020", "2021", "2022", "2023"]  # 2021 and 2022 have no plans, but are there
+    assert set(years["stage"]) == set(plans.STAGES)
+    assert years["plans"].sum() == 2
+    assert plans.per_year(frame({"published_at": None})).empty
+
+
+def test_counts_per_label_and_stage_are_sorted_by_total_and_can_be_cut_off():
+    shown = frame(
+        {"district": "A"},
+        {"district": "A", "legal_status": "Entwurf"},
+        {"district": "A"},
+        {"district": "B"},
+        {"district": None},
+    )
+    counts = plans.stage_counts(shown, "district")
+    assert list(counts["label"].drop_duplicates()) == ["A", "(none)", "B"]  # ties are sorted by name
+    assert counts.drop_duplicates("label").set_index("label")["total"].to_dict() == {"A": 3, "B": 1, "(none)": 1}
+    assert set(plans.stage_counts(shown, "district", top=1)["label"]) == {"A"}
+
+
 def test_every_configured_signal_is_listed_even_with_zero_plans():
     counts = plans.signal_counts(frame({}, {})).set_index("signal")["plans"]
     assert counts.to_dict() == {"grid_landing": 0, "peatland_restoration": 0, "solar_acreage": 2}
