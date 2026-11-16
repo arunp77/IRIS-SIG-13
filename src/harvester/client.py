@@ -1,5 +1,8 @@
 """Polite HTTP access to the portal.
 
+This code is a reusable HTTP client and it is for communicating with the B-plan website, 
+download its HTML pages and make sure that downloading is reliable, controlled and efficient.
+
 - The contact address goes into the User-Agent, so the portal operator can reach us.
 - At least `min_interval` seconds between two network requests.
 - Temporary failures (timeout, connection error, HTTP 429/5xx) are retried with growing
@@ -10,13 +13,13 @@
 - Offline mode: answer only from the cache, whatever its age, and never touch the network.
 """
 
-import hashlib
-import json
-import logging
-import time
-from pathlib import Path
+import hashlib                  # Generates unique hashes for cache filenames.
+import json                     # Parses and serializes JSON data for cache entries.
+import logging                  # Handles logging of events and errors.
+import time                     # Used for timing and cache TTL calculations.
+from pathlib import Path        # Used for managing file paths (cache directory).
 
-import requests
+import requests                 # Used for making HTTP requests.
 
 log = logging.getLogger(__name__)
 

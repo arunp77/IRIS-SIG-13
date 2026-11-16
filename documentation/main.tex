@@ -18,7 +18,11 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning,shapes.geometric,arrows.meta}
 \usepackage[obeyspaces,spaces]{url}   % before hyperref so the options do not clash
-\usepackage[hidelinks]{hyperref}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
 
 \graphicspath{{../docs/figures/}}
 
@@ -41,14 +45,13 @@
 % ---------------------------------------------------------------- title
 \title{Mecklenburg-Vorpommern B-Plan Portal Harvester\\[0.3em]
   \large Technical documentation of assignment IRIS-SIG-13}
-\author{Arun Kumar Pandey}
 \date{\today}
 
 \begin{document}
 \maketitle
 
 % ================================================================ 1
-\section{Summary}
+\section*{Summary}
 
 This document explains how the harvester was built and why it works the way it does. Setup, commands, the file layout
 and the list of tests are in the \code{README.md} of the repository, so they are not repeated here. This text covers what
@@ -70,33 +73,176 @@ Main caveat & The portal has no publication date, so \code{published_at} is a st
 \bottomrule
 \end{tabularx}
 \end{center}
+%
+
+\begin{itemize}
+	\item \textbf{Title of the project:} Mecklenburg-Vorpommern B-Plan Portal Harvester (IRIS-SIG-13).
+	\item \textbf{Objective:} \emph{``Capture Baltic energy grid landing points, solar acreage, and peatland restoration proposals.''}
+	\item \textbf{State or province:} Mecklenburg-Vorpommern
+	\item \textbf{Author:} Arun Kumar Pandey
+\end{itemize}
+
+
+\newpage 
+
+
+% ================================================================
+\section{Introduction}
+The increasing development of renewable energy infrastructure and environmental restoration initiatives has created a growing need for reliable and structured information about land-use planning activities. In Germany, municipalities publish planning documents (Bebauungspläne, commonly referred to as B-Plans) that describe proposed developments, land-use changes, and infrastructure projects within their respective administrative areas.
+
+The Mecklenburg-Vorpommern B-Plan Portal (\url{https://b-plan-mv.de}) provides publicly accessible planning information for the federal state of Mecklenburg-Vorpommern, Germany. These records can contain valuable information about renewable energy developments, electricity infrastructure, and environmental restoration proposals. However, extracting relevant information from publicly available web sources and making it suitable for systematic analysis requires an automated and structured data ingestion process.
+%
+\begin{figure}[h]
+	\centering
+	\input{germany_map.tex}
+	\caption{The area of the assignment: the German state of Mecklenburg-Vorpommern (dark) on the Baltic coast, among the 16
+		German states. Source: Natural Earth 1:10m admin-1 boundaries (public domain), simplified; small islands are omitted.}
+	\label{fig:mv-map}
+\end{figure}
+% ================================================================ 1b
+\section{Objective and scope}\label{sec:objective}
+The objective of this project is to develop a Python-based data harvesting application that collects relevant planning records from the Mecklenburg-Vorpommern B-Plan Portal. The implementation specifically focuses on identifying three categories of information:
+\begin{itemize}
+	\item Baltic energy grid landing points: Planning information related to electricity infrastructure and associated grid landing locations.
+	%
+	\item Solar acreage: Planning proposals concerning land areas designated for solar energy installations.
+	%
+	\item Peatland restoration proposals: Planning activities associated with the restoration of peatland areas.
+\end{itemize}
+%
+The collected information will be extracted from the source website, processed, validated, and transformed into a consistent data structure. Relevant metadata, including source identifiers, document titles, publication dates, source URLs, and geographical context, will be preserved wherever available.
+
+An important component of the implementation is the integration of geographical information. Where sufficient location information is available, the application will resolve locations into point geometries using the ETRS89 / UTM Zone 32N coordinate reference system (EPSG:25832). Ambiguous or unresolved locations will be documented rather than assigned potentially inaccurate coordinates.
+
+The processed records will be stored in a PostgreSQL 16 database with PostGIS 3.4 support, specifically within the staging destination \texttt{\textcolor{red}{iris\_staging.signal\_ingest}}. The ingestion process will be designed to support repeatable execution and idempotent (an operation, function, or action can be applied multiple times and produce the exact same final result as if it were applied only once) database operations, ensuring that repeated runs do not generate duplicate records.
+
+In addition to the core extraction and database integration functionality, the application will incorporate appropriate error handling and data validation mechanisms. These will address potential issues such as network failures, malformed source data, missing fields, duplicate records, empty responses, and invalid geographical coordinates.
+
+The overall goal is to deliver a maintainable, configurable, and testable data ingestion pipeline that can reliably transform publicly accessible planning information into structured records suitable for subsequent processing and analysis. The implementation will also include automated tests, representative sample outputs, execution instructions, and documentation describing the data source, processing assumptions, and known limitations.
+%----------------------------------------
+
+\noindent
+\textbf{Limitations:} 
+First, if the endpoint or the HTML selectors are obsolete, the
+candidate must document the problem and deliver a tested, fixture-based implementation with a justified alternative; that is
+why Section~\ref{sec:source} exists. Second, source access and publication dates must be \emph{verified rather than
+assumed}; that is why the access terms are checked and why \textcolor{red}{\code{published_at}} is a documented stand-in
+(Section~\ref{sec:dates}).
+%=------------------------------
+\section{Project Scope and Requirements Traceability Table}
+\begin{table}[H]
+	\centering
+%	\caption{Mapping of Project Requirements to Implementation and Documentation}
+	\label{tab:requirements_mapping}
+	
+	\renewcommand{\arraystretch}{1.8}
+	\setlength{\tabcolsep}{8pt}
+	
+	\begin{tabularx}{\textwidth}{
+			@{}
+			>{\raggedright\arraybackslash}p{0.43\textwidth}
+			>{\raggedright\arraybackslash}X
+			@{}
+		}
+		\toprule
+		\textbf{Project requirement} &
+		\textbf{Implementation and documentation} \\
+		\midrule
+		
+		Identify the publicly accessible data source, examine its
+		structure and format, and implement the required data
+		extraction method.
+		&
+		Source investigation, website structure and extraction
+		approach are described in Section~\ref{sec:source}. \\
+		%
+		Extract relevant planning records while preserving their
+		source identifiers, titles, publication dates, URLs and
+		available geographical information.
+		&
+		Record extraction and field mapping are described in
+		Section~\ref{sec:design}. The complete list of 20 data
+		fields is provided in \texttt{docs/data\_dictionary.md}. \\
+		%
+		Standardise the extracted information and store it in
+		PostgreSQL using repeatable operations that prevent
+		duplicate records.
+		&
+		Data normalisation, database integration and
+		duplicate prevention are described under
+		``Repeating a run'' in Section~\ref{sec:design}. \\
+		%
+		Convert available location information into point
+		geometries using EPSG:25832 and document locations
+		that cannot be reliably resolved.
+		&
+		Coordinate transformation, location validation and
+		unresolved locations are discussed under
+		``Locations'' in Section~\ref{sec:design}. \\
+		%
+		Handle pagination, incremental data retrieval,
+		network failures, duplicate records, malformed data
+		and empty responses.
+		&
+		Data retrieval and error-handling mechanisms are
+		described in Section~\ref{sec:design}, with their
+		behaviour verified through automated tests in
+		Section~\ref{sec:tests}. \\
+		%
+		\bottomrule
+	\end{tabularx}
+\end{table}
+%
+\textbf{Out of scope:} The documents behind the plans are not downloaded (only their links are stored), the outline of a
+plan is not stored (only its centroid), and the harvester does not interpret plans beyond classifying them by title.
+No satellite or raster data is used in this assignment.
 
 % ================================================================ 2
 \Needspace{26\baselineskip}
-\section{The acceptance criteria}
+\section{The acceptance criteria}\label{sec:criteria}
+%
+The implementation is considered complete when the following
+functional and technical requirements are satisfied:
 
-The README lists where each deliverable of the brief can be found: the code in \code{src/harvester/}, the tests in
-\code{tests/}, the sample output in \code{data/sample/}, the validation queries in \code{sql/02_validation.sql} and
-the short error and quality report in \code{docs/quality_report.md}. This is how I read the four acceptance criteria.
+\begin{enumerate}
+	
+	\item \textbf{Signal classification and geographic filtering:} 
+	Planning records are classified according to the three target
+	signal categories: Baltic energy grid landing points, solar
+	acreage, and peatland restoration proposals. Geographic and
+	domain-specific filtering is applied to ensure that only
+	relevant records are processed.
+	
+	\item \textbf{Data integrity and traceability:} 
+	Extracted records are transformed into the defined staging
+	schema and successfully persisted in
+	\textcolor{red}{\texttt{iris\_staging.signal\_ingest}}. Available source
+	identifiers, titles, publication dates, source URLs, and
+	geographic information are retained to ensure data
+	provenance and traceability.
+	
+	\item \textbf{Idempotent data ingestion:} 
+	Repeated execution of the ingestion pipeline does not
+	introduce duplicate records. Existing records are handled
+	consistently through appropriate database conflict-resolution
+	and update mechanisms.
+	
+	\item \textbf{Data validation and fault handling:} 
+	Missing or malformed attributes, extraction failures,
+	network errors, and unresolved geographic locations are
+	explicitly recorded and reported. Coordinate validation
+	prevents invalid spatial data from being accepted as valid
+	geometries.
+	
+	\item \textbf{Operational reliability and maintainability:} 
+	The pipeline supports configurable execution, structured
+	error reporting, and automated testing. Its functionality
+	can be demonstrated independently using representative
+	source fixtures and a test database, without requiring
+	access to production infrastructure.
+	
+\end{enumerate}
 
-\begin{center}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{1.5cm}X@{}}
-\toprule
-\textbf{Criterion} & \textbf{Status} & \textbf{Evidence}\\
-\midrule
-Right signal types and geographic filtering & Partly &
- The filtering works: every one of the 755 points lies inside the state outline or within 3~km of it, and the titles are on
- topic. But only the solar signal has data, because the portal has nothing for the other two.\\
-Valid, traceable records, no duplicates on re-run & Met &
- Every row keeps its source URL, a content hash and the raw record. The second run changed nothing.\\
-Errors and missing fields visible, no silent bad coordinates & Met &
- The run report lists every plan that was left out, skipped, rejected or incomplete, with the reason. An impossible
- coordinate rejects the record.\\
-Maintainable, configurable, demonstrable offline & Met &
- Rules in a YAML file, settings in \code{.env}, and the whole run can be replayed from saved portal answers.\\
-\bottomrule
-\end{tabularx}
-\end{center}
 
 % ================================================================ 3
 \section{The source}\label{sec:source}
@@ -108,8 +254,15 @@ Maintainable, configurable, demonstrable offline & Met &
 
 \subsection{The successor portal}
 
-The state's \emph{Bau- und Planungsportal M-V} lists Bebauungspläne, vorhabenbezogene Bebauungspläne,
-Flächennutzungspläne and Satzungen, including plans that are still in preparation. It has three layers, and only two are
+The state's \emph{Bau- und Planungsportal M-V} lists:
+\begin{itemize}
+	\item Bebauungspläne = Development plans
+	\item Flächennutzungspläne and Satzungen = Land-use plans and bylaws
+	\item vorhabenbezogene Bebauungspläne = project-related development plans,
+	\item Satzungen = Bylaws
+\end{itemize}
+%
+including plans that are still in preparation. It has three layers, and only two are
 useful:
 
 \begin{itemize}
@@ -132,7 +285,7 @@ The listing pages cannot be read that way because they are empty, which is why t
 \subsection{What I had to work around}\label{sec:traps}
 
 \begin{enumerate}
-\item The counters of the search (\code{total}, \code{hits}, \code{offset}, \code{n}) count result \emph{groups}, not
+\item The counters of the search (\textcolor{red}{\code{total}}, \textcolor{red}{\code{hits}}, \textcolor{red}{\code{offset}}, \textcolor{red}{\code{n}}) count result \emph{groups}, not
   records. One plan can appear in several groups, so paging advances by the number of groups received and repeated plans
   are merged afterwards.
 \item The search matches inside words. \code{Moor} also finds place names like \emph{Broderstorf}, so the portal's search
@@ -305,6 +458,50 @@ live run needs the user's own e-mail address, which is sent to the portal in the
 The README describes these steps in detail, together with the dashboard that shows the table on a map. Python 3.11 or
 newer and Docker are needed. I developed and tested on Ubuntu 26.04 LTS with Docker 29.1 and Python 3.11, 3.12 and 3.13; I have not run it on
 Windows or macOS.
+
+% ================================================================ 6b
+\section{Work plan and next steps}\label{sec:plan}
+
+\subsection{How the work was planned}
+
+The order of work followed one rule: settle what is uncertain first, and build the parts that others depend on before the
+parts that show results.
+
+\begin{enumerate}
+\item \textbf{Investigate the source} (27--28 October). Confirm that the URL of the brief is dead, find the successor
+  portal, and learn how its search service and detail pages behave (Section~\ref{sec:source}). Everything else depends
+  on this, and it changed the design: the HTML-only approach of the brief does not work.
+\item \textbf{Fix the target before the code.} Project setup with locked dependencies, then the staging table and the
+  validation queries. The checks that define ``correct'' (no duplicates, valid geometry, point inside MV, traceable rows)
+  existed before the first record was loaded.
+\item \textbf{Build the harvester} in the order of the data flow: polite HTTP client, search paging, classification,
+  location check, idempotent loader.
+\item \textbf{Make it reproducible.} Keep the raw portal answers with checksums, so the full run can be replayed offline,
+  then add the export, the quick-look map and the offline demo.
+\item \textbf{Make it visible.} A dashboard with map, charts and the run report, so that a reader can see the result
+  without SQL.
+\item \textbf{Test on real data.} 112 tests on saved portal answers, including every error case the brief lists.
+\item \textbf{Document}: README, source notes, data dictionary, quality report, and this document.
+\end{enumerate}
+
+\subsection{Proposed next steps}
+
+These follow from the open questions in Section~\ref{sec:open}. They are proposals for discussion with the users of the
+data, not commitments, and the first two depend on their answers.
+
+\begin{enumerate}
+\item \textbf{Find a source for the two missing signals.} Look at the other GeoPortal content that the search service
+  returns without the \code{type=Bauleitplan} filter (offshore cable layers, Moorschutz datasets), and check whether a
+  different public source holds grid landing and peatland plans.
+\item \textbf{Settle the publication date} with the data owner, and decide whether draft-stage plans without a public date
+  should be loaded.
+\item \textbf{Measure the classifier.} The signal is decided from the title only. Label a sample of the 802 candidates by
+  hand, measure precision and recall, and widen the rules only where the numbers justify it.
+\item \textbf{Improve the location.} Replace the bounding box with the legal state border, and consider storing the
+  plan outline instead of only the centroid.
+\item \textbf{Make runs incremental}, for example by loading only plans whose detail page changed, if the portal ever
+  offers a ``changed since'' filter, or by scheduling the full refresh and reporting what changed.
+\end{enumerate}
 
 % ================================================================ 7
 \section{Limitations and open questions}\label{sec:open}
